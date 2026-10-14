@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEETA - parent sign in</title>
+  <link rel="stylesheet" href="/static/style.css?v=9" />
+  <link rel="stylesheet" href="/static/portal.css?v=7" />
+</head>
+<body data-expect="parent">
+  <div class="bg-blobs" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">&#129504;</span>
+      <div><h1>GEETA</h1><p class="tag">Parents</p></div>
+    </div>
+    <div class="top-actions"><a class="btn ghost small" href="/login.html">&larr; Back</a></div>
+  </header>
+
+  <div class="auth-wrap">
+    <section class="panel" id="code-panel" hidden>
+      <h2>&#128274; Enter your code</h2>
+      <form class="form" id="code-form">
+        <label>6-digit code from your authenticator app
+          <input name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="20" required /></label>
+        <p class="form-note">Lost your phone? Type one of your recovery codes instead.</p>
+        <p class="msg-err" id="code-err" role="alert"></p>
+        <button class="btn primary" type="submit">Continue</button>
+      </form>
+    </section>
+
+    <section class="panel" id="login-panel" hidden>
+      <h2>&#128106; Parent sign in</h2>
+      <form class="form" id="login-form">
+        <label>Email <input type="email" name="email" autocomplete="username" required /></label>
+        <label>Password <input type="password" name="password" autocomplete="current-password" required /></label>
+        <p class="msg-err" id="login-err" role="alert"></p>
+        <button class="btn primary" type="submit">Sign in</button>
+        <p class="form-note">No account yet, or forgot your password? Ask your child's tutor - they can set you up.</p>
+      </form>
+    </section>
+  </div>
+
+  <p class="legal-link"><a href="/privacy.html">How we look after your information</a></p>
+
+  <script src="/static/login.js?v=3"></script>
+</body>
+</html>

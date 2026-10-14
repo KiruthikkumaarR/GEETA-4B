@@ -1,0 +1,10 @@
+{
+  "seed": 20260901,
+  "per_form_target": 6,
+  "items_per_form": {
+    "form_a": 6,
+    "form_b": 6
+  },
+  "parallel": true,
+  "note": "form_a/form_b are parallel forms (same construct coverage, disjoint items); post uses the SAME items as pre (parallel-forms design, brief section 6)"
+}

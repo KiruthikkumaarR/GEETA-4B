@@ -1,0 +1,33 @@
+# llama.cpp sampling / generation profile for GEETA 4B (served via llama-server + mtmd)
+# Per-purpose profiles - one setting does not fit OCR + tutoring + internal verify.
+# Thinking OFF at the template level (training used enable_thinking=False).
+
+baseline:            # ModelClient defaults
+  temperature: 0.6
+  top_p: 0.9
+  top_k: 40
+  repeat_penalty: 1.1
+  max_tokens: 512
+
+tutor_chat:          # kid-facing hints / coaching (tools/tutor_engine.ipynb)
+  temperature: 0.5
+  top_p: 0.9
+  top_k: 40
+  repeat_penalty: 1.1
+  max_tokens: 120    # replies are < 50 words; keeps them tight
+
+ocr:                 # faithful transcription (ModelClient.ocr_page)
+  temperature: 0.1
+  top_p: 0.85
+  top_k: 20
+  repeat_penalty: 1.0   # real pages legitimately repeat numbers
+  max_tokens: 512
+
+verify:              # internal 'work it out' JSON (never shown to the child)
+  temperature: 0.0    # greedy - exact-answer task, keeps the metric reproducible
+  top_p: 0.9
+  repeat_penalty: 1.0
+  max_tokens: 384
+
+stop: ["User:", "System:"]
+# NOTE: no greedy decoding (temp 0) for tutor voice - needs gentle natural variety.

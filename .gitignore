@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated artifacts (regenerable by notebooks)
+outputs/
+data/processed/
+data/splits/
+data/eval/handwriting_synth/
+data/raw/sample_homework/*.pdf
+third_party/
+
+# Secrets — never commit credentials
+.env
+*.env.local
+config/credentials.local.yaml
+
+# OS
+.DS_Store
+
+# M4 artifacts (models) — never commit weights
+models/
+
+# Portal: kids learning history + accounts (local only, never commit)
+data/portal/
+
+# ---- added 2026-10-14 when the project went into git ----
+# Children's / real-world data: NEVER in git (consented for this project only)
+data/raw/
+data/eval/real_worksheet_heldout.jsonl
+data/eval/handwriting_manifest.json
+# big binaries
+*.safetensors
+*.gguf
+*.bin
+*.pt
+# runtime: logs (may hold IP addresses), outbox, test output
+logs/
+outputs/
+# private settings of any kind
+config/*.local.yaml
+*.pem

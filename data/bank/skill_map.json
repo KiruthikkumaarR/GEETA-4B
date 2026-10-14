@@ -1,0 +1,390 @@
+{
+  "source": "ACARA Mathematics Curriculum F–10 (v9.0), Years 1–3, in-scope strands",
+  "retrieved": "2026-08-18",
+  "code_verification": {
+    "verified": "confirmed against QCAA-published ACARA v9.0 alignment documents",
+    "approximate": "follows v9.0 code convention; re-verify at australiancurriculum.edu.au before publication"
+  },
+  "skills": [
+    {
+      "id": "y1-number-100",
+      "year": 1,
+      "strand": "Number",
+      "name": "Numbers to 100: count, read, write, order",
+      "code": "AC9M1N01",
+      "code_status": "approximate",
+      "desc": "recognise, model, read, write and order numbers to at least 100; locate numbers on a number line",
+      "qtypes": [
+        "fill_in",
+        "mcq",
+        "drawing"
+      ],
+      "target": 60
+    },
+    {
+      "id": "y1-place-value",
+      "year": 1,
+      "strand": "Number",
+      "name": "Place value: partition, exchange, represent (tens & ones)",
+      "code": "AC9M1N02",
+      "code_status": "approximate",
+      "desc": "develop understanding of place value for partitioning, exchanging and representing one- and two-digit numbers in various ways",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 50
+    },
+    {
+      "id": "y1-counting",
+      "year": 1,
+      "strand": "Number",
+      "name": "Counting sequences (1s, 2s, 5s, 10s) from any start",
+      "code": "AC9M1N03",
+      "code_status": "approximate",
+      "desc": "develop confidence with number sequences to and from 100 by ones from any starting point; skip count by twos, fives and tens",
+      "qtypes": [
+        "fill_in",
+        "mcq"
+      ],
+      "target": 40
+    },
+    {
+      "id": "y1-add-sub-20",
+      "year": 1,
+      "strand": "Algebra",
+      "name": "Add & subtract within 20 (counting on, partitioning)",
+      "code": "AC9M1A01",
+      "code_status": "approximate",
+      "desc": "represent and solve simple addition and subtraction problems using a range of strategies including counting on, partitioning and rearranging parts",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 60
+    },
+    {
+      "id": "y1-add-sub-100",
+      "year": 1,
+      "strand": "Algebra",
+      "name": "Add & subtract 2-digit numbers without regrouping",
+      "code": "AC9M1A02",
+      "code_status": "approximate",
+      "desc": "add and subtract suitable two-digit numbers using place-value strategies (ones with ones, tens with tens), without regrouping",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 50
+    },
+    {
+      "id": "y1-fraction-half",
+      "year": 1,
+      "strand": "Number",
+      "name": "Halves of a whole",
+      "code": "AC9M1N04",
+      "code_status": "approximate",
+      "desc": "recognise and describe one-half as one of two equal parts of a whole",
+      "qtypes": [
+        "fill_in",
+        "drawing",
+        "mcq"
+      ],
+      "target": 25
+    },
+    {
+      "id": "y1-time",
+      "year": 1,
+      "strand": "Measurement",
+      "name": "Time: o'clock, half past, nearest 5 minutes",
+      "code": "AC9M1M01",
+      "code_status": "approximate",
+      "desc": "use time language, read and write the hour and half past, tell time to the nearest 5 minutes",
+      "qtypes": [
+        "fill_in",
+        "mcq"
+      ],
+      "target": 30
+    },
+    {
+      "id": "y1-money",
+      "year": 1,
+      "strand": "Measurement",
+      "name": "Money: coins and notes to $20",
+      "code": "AC9M1M02",
+      "code_status": "approximate",
+      "desc": "model and count Australian coins and notes to $20",
+      "qtypes": [
+        "fill_in",
+        "word_problem",
+        "mcq"
+      ],
+      "target": 40
+    },
+    {
+      "id": "y1-shapes",
+      "year": 1,
+      "strand": "Space",
+      "name": "2D & 3D shapes: compare, classify, describe",
+      "code": "AC9M1SP01",
+      "code_status": "approximate",
+      "desc": "compare and classify two-dimensional and three-dimensional shapes and describe them using informal language",
+      "qtypes": [
+        "mcq",
+        "drawing",
+        "fill_in"
+      ],
+      "target": 16
+    },
+    {
+      "id": "y2-number-1000",
+      "year": 2,
+      "strand": "Number",
+      "name": "Numbers to 1,000: represent, order, place value",
+      "code": "AC9M2N01",
+      "code_status": "verified",
+      "desc": "recognise, represent and order numbers to at least 1000 using physical and virtual materials, numerals and number line",
+      "qtypes": [
+        "fill_in",
+        "mcq",
+        "word_problem"
+      ],
+      "target": 50
+    },
+    {
+      "id": "y2-place-value",
+      "year": 2,
+      "strand": "Number",
+      "name": "Place value: partition, exchange, regroup (2–3 digits)",
+      "code": "AC9M2N02",
+      "code_status": "approximate",
+      "desc": "apply place value to partition, rearrange and rename two- and three-digit numbers in terms of their parts and regroup partitioned numbers to assist in calculations",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 50
+    },
+    {
+      "id": "y2-add-sub",
+      "year": 2,
+      "strand": "Algebra",
+      "name": "Add & subtract 1–3 digit numbers (with regrouping)",
+      "code": "AC9M2A01",
+      "code_status": "approximate",
+      "desc": "add and subtract one-, two- and three-digit numbers, including regrouping, using efficient strategies",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 60
+    },
+    {
+      "id": "y2-times-2",
+      "year": 2,
+      "strand": "Algebra",
+      "name": "Times-2 facts + related division (doubling/halving)",
+      "code": "AC9M2A03",
+      "code_status": "verified",
+      "desc": "recall and demonstrate proficiency with multiplication facts for twos; extend and apply facts to develop the related division facts using doubling and halving",
+      "qtypes": [
+        "fill_in",
+        "word_problem",
+        "mcq"
+      ],
+      "target": 24
+    },
+    {
+      "id": "y2-fractions",
+      "year": 2,
+      "strand": "Number",
+      "name": "Unit fractions 1/2, 1/3, 1/4 + multiples to a whole",
+      "code": "AC9M2N04",
+      "code_status": "approximate",
+      "desc": "recognise, represent and order unit fractions including 1/2, 1/3, 1/4 and their multiples to a complete whole",
+      "qtypes": [
+        "fill_in",
+        "drawing",
+        "mcq"
+      ],
+      "target": 35
+    },
+    {
+      "id": "y2-time",
+      "year": 2,
+      "strand": "Measurement",
+      "name": "Time: quarter past, days between events (calendar)",
+      "code": "AC9M2M01",
+      "code_status": "approximate",
+      "desc": "use time language, read and write the hour, half past and quarter past, tell time to the nearest 5 minutes; determine the number of days between events using a calendar",
+      "qtypes": [
+        "fill_in",
+        "mcq",
+        "word_problem"
+      ],
+      "target": 35
+    },
+    {
+      "id": "y2-money",
+      "year": 2,
+      "strand": "Measurement",
+      "name": "Money: coins and notes to $100",
+      "code": "AC9M2M02",
+      "code_status": "approximate",
+      "desc": "model and count Australian coins and notes to $100",
+      "qtypes": [
+        "fill_in",
+        "word_problem",
+        "mcq"
+      ],
+      "target": 40
+    },
+    {
+      "id": "y2-patterns",
+      "year": 2,
+      "strand": "Algebra",
+      "name": "Number patterns (sequences by 2, 3, 5, 10)",
+      "code": "AC9M2A04",
+      "code_status": "approximate",
+      "desc": "investigate number sequences, initially those increasing and decreasing by twos, threes, fives and tens from any starting point, then moving to other sequences",
+      "qtypes": [
+        "fill_in",
+        "mcq"
+      ],
+      "target": 35
+    },
+    {
+      "id": "y3-number-10000",
+      "year": 3,
+      "strand": "Number",
+      "name": "Numbers to 10,000: represent, order, round",
+      "code": "AC9M3N01",
+      "code_status": "verified",
+      "desc": "recognise, represent and order natural numbers using naming and writing conventions for numerals to at least 10,000",
+      "qtypes": [
+        "fill_in",
+        "mcq",
+        "word_problem"
+      ],
+      "target": 45
+    },
+    {
+      "id": "y3-odd-even",
+      "year": 3,
+      "strand": "Number",
+      "name": "Odd & even numbers",
+      "code": "AC9M3N07",
+      "code_status": "verified",
+      "desc": "investigate the conditions required for a number to be odd or even and identify odd and even numbers",
+      "qtypes": [
+        "mcq",
+        "word_problem",
+        "fill_in"
+      ],
+      "target": 30
+    },
+    {
+      "id": "y3-add-sub",
+      "year": 3,
+      "strand": "Algebra",
+      "name": "Add & subtract 3–4 digit numbers",
+      "code": "AC9M3A02",
+      "code_status": "approximate",
+      "desc": "extend and apply knowledge of addition and subtraction facts to 20 to develop efficient mental strategies for computation with larger numbers without a calculator (3- and 4-digit sums/differences to 10,000)",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 55
+    },
+    {
+      "id": "y3-missing-value",
+      "year": 3,
+      "strand": "Algebra",
+      "name": "Missing values (addition/subtraction as inverse ops)",
+      "code": "AC9M3A01",
+      "code_status": "verified",
+      "desc": "recognise and explain the connection between addition and subtraction as inverse operations; apply to partition numbers and find unknown values in number sentences",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 45
+    },
+    {
+      "id": "y3-times",
+      "year": 3,
+      "strand": "Algebra",
+      "name": "Times-3, 4, 5, 10 facts + related division",
+      "code": "AC9M3A03",
+      "code_status": "verified",
+      "desc": "recall and demonstrate proficiency with multiplication facts for 3, 4, 5 and 10; extend and apply facts to develop the related division facts",
+      "qtypes": [
+        "fill_in",
+        "word_problem",
+        "mcq"
+      ],
+      "target": 60
+    },
+    {
+      "id": "y3-division",
+      "year": 3,
+      "strand": "Algebra",
+      "name": "Division: equal sharing (intro)",
+      "code": "AC9M3A04",
+      "code_status": "approximate",
+      "desc": "use the connection between multiplication and division to solve simple division (equal sharing) problems",
+      "qtypes": [
+        "word_problem",
+        "fill_in",
+        "mcq"
+      ],
+      "target": 40
+    },
+    {
+      "id": "y3-fractions-set",
+      "year": 3,
+      "strand": "Number",
+      "name": "Unit fractions 1/2…1/10, fractions of a set, combine to whole",
+      "code": "AC9M3N02",
+      "code_status": "verified",
+      "desc": "recognise and represent unit fractions including 1/2, 1/3, 1/4, 1/5 and 1/10 and their multiples in different ways; combine fractions with the same denominator to complete the whole",
+      "qtypes": [
+        "fill_in",
+        "word_problem",
+        "drawing",
+        "mcq"
+      ],
+      "target": 45
+    },
+    {
+      "id": "y3-time",
+      "year": 3,
+      "strand": "Measurement",
+      "name": "Time: to the nearest minute",
+      "code": "AC9M3M01",
+      "code_status": "approximate",
+      "desc": "use time language, read and write time to the nearest minute; solve simple elapsed-time problems",
+      "qtypes": [
+        "fill_in",
+        "word_problem"
+      ],
+      "target": 25
+    },
+    {
+      "id": "y3-money",
+      "year": 3,
+      "strand": "Number",
+      "name": "Money contexts: totals, change to nearest 5c",
+      "code": "AC9M3N06",
+      "code_status": "verified",
+      "desc": "use mathematical modelling to solve practical problems involving additive and multiplicative situations including financial contexts; formulate problems using number sentences",
+      "qtypes": [
+        "word_problem",
+        "fill_in",
+        "mcq"
+      ],
+      "target": 45
+    }
+  ]
+}

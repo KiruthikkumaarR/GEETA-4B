@@ -1,0 +1,36 @@
+# GEETA 4B — Python dependencies (used by notebooks/ and webapp backend)
+# Install:  python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+
+# --- Core pipeline ---
+pydantic>=2.6          # C1 schema validation
+pyyaml>=6.0            # config loading
+pypdfium2>=4.30        # C1 PDF -> PNG rendering
+openpyxl>=3.1          # C1 teacher review sheets
+Pillow>=10.0           # image handling, synthetic handwriting samples
+
+# --- Verifier engine (C5) ---
+sympy>=1.12            # independent arithmetic recomputation
+
+# --- Reports (C8) ---
+reportlab>=4.0         # parent PDF
+matplotlib>=3.8        # charts in parent/dev reports
+
+# --- Model client / serving (C4) ---
+requests>=2.31         # OpenAI-compatible llama.cpp /v1 client
+
+# --- Jupyter runtime (notebooks execute directly) ---
+jupyter>=1.0
+nbformat>=5.9
+nbclient>=0.9
+ipykernel>=6.29
+
+# --- Fine-tuning + serving (M4; Apple Silicon / MLX) ---
+mlx>=0.25            # MLX core (LoRA training, merge, vision-tower loop)
+mlx-lm>=0.31         # text LoRA trainer
+mlx-vlm>=0.6         # vision-tower fine-tune + OCR brain (mlx path)
+transformers>=4.46   # chat templates, HF dir assembly
+torch>=2.6           # llama.cpp convert_hf_to_gguf.py (M4 cell G)
+
+# --- Optional: ASR upgrade (C7) ---
+# silero-vad
+# faster-whisper   # or whisper.cpp binaries in third_party/

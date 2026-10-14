@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEETA - Tutor</title>
+  <link rel="stylesheet" href="/static/style.css?v=9" />
+  <link rel="stylesheet" href="/static/portal.css?v=9" />
+</head>
+<body data-page="tutor">
+  <div class="bg-blobs" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">&#129504;</span>
+      <div><h1>GEETA &middot; Tutor</h1><p class="tag" id="whoami">&nbsp;</p></div>
+    </div>
+    <div class="top-actions">
+      <button id="btn-password" class="btn ghost small" type="button">Change password</button>
+      <button id="btn-logout" class="btn small" type="button">Sign out</button>
+    </div>
+  </header>
+
+  <main class="portal-main">
+
+    <h2 class="section-title">My students</h2>
+    <div class="kid-grid" id="kids"></div>
+
+    <section class="panel device-box" id="device-box">
+      <div>
+        <h3 style="margin:0 0 4px">Kid sign-in on this device <span class="pill off" id="device-state">off</span></h3>
+        <p class="form-note">Switch this on for the computer or tablet your child uses. They then sign in with their picture and secret number - no email or password, and they can't see these grown-up pages.</p>
+      </div>
+      <button class="btn" type="button" id="btn-device">Let kids sign in on this device</button>
+    </section>
+
+    <section class="panel device-box" id="twostep-box">
+      <div>
+        <h3 style="margin:0 0 4px">2-step sign-in <span class="pill off" id="twostep-state">off</span></h3>
+        <p class="form-note" id="twostep-note">Adds a 6-digit code from an authenticator app (Google Authenticator, Microsoft Authenticator, 1Password...) when you sign in - so a stolen password alone can't get in.</p>
+      </div>
+      <button class="btn" type="button" id="btn-twostep">Turn on 2-step sign-in</button>
+    </section>
+
+    <dialog class="sheet" id="twostep-dialog">
+      <h2 style="margin-top:0">Turn on 2-step sign-in</h2>
+      <ol class="steps">
+        <li>Open your authenticator app and choose <b>Add account &rarr; Enter a setup key</b>.</li>
+        <li>Account: <b>GEETA</b>. Key: <code class="secret" id="twostep-secret"></code></li>
+        <li>On this phone you can also <a id="twostep-link" href="#">tap here to add it</a>.</li>
+        <li>Type the 6-digit code the app shows:</li>
+      </ol>
+      <form class="form" id="twostep-form">
+        <input name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="8" required placeholder="123456" />
+        <p class="msg-err" id="twostep-err" role="alert"></p>
+        <div style="display:flex; gap:10px"><button class="btn primary" type="submit">Turn on</button>
+          <button class="btn ghost" type="button" id="twostep-cancel">Cancel</button></div>
+      </form>
+      <div id="twostep-done" hidden>
+        <p><b>2-step sign-in is on.</b> Save these recovery codes somewhere safe (each works once if you lose your phone). They won't be shown again:</p>
+        <pre class="recovery" id="twostep-codes"></pre>
+        <button class="btn primary" type="button" id="twostep-close">I've saved them</button>
+      </div>
+    </dialog>
+
+    <section class="panel device-box" id="email-box">
+      <div>
+        <h3 style="margin:0 0 4px">Email me a daily report <span class="pill off" id="email-state">off</span></h3>
+        <p class="form-note">Each evening (only on days your child used GEETA) you get an email with a PDF of what they practised.</p>
+      </div>
+      <button class="btn" type="button" id="btn-email">Turn on</button>
+    </section>
+
+    <section class="panel detail" id="detail" hidden aria-live="polite"></section>
+
+  </main>
+
+  <dialog class="sheet" id="pw-dialog">
+    <h2 style="margin-top:0">Change password</h2>
+    <form class="form" id="pw-form">
+      <label>Current password <input type="password" name="current" autocomplete="current-password" required /></label>
+      <label>New password <input type="password" name="new" autocomplete="new-password" required minlength="10" /></label>
+      <p class="form-note">At least 10 characters, with upper- and lower-case letters and a number.</p>
+      <p class="msg-err" id="pw-err" role="alert"></p>
+      <div style="display:flex; gap:10px">
+        <button class="btn primary" type="submit">Save</button>
+        <button class="btn ghost" type="button" id="pw-cancel">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="foot">
+    Only a short learning summary is kept for each child (skills, results, hints) - never the chat, homework photos or camera.
+    It lives on the GEETA computer, and a parent can delete it any time.
+  </footer>
+
+  <script src="/static/portal.js?v=5"></script>
+</body>
+</html>

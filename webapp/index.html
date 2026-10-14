@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEETA - your maths buddy</title>
+  <link rel="stylesheet" href="/static/style.css?v=9" />
+  <link rel="stylesheet" href="/static/portal.css?v=7" />
+  <link rel="stylesheet" href="/static/worlds.css?v=3" />
+</head>
+<body class="kid-page" data-world="teddy">
+  <div class="world-scene" id="world-scene" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">&#129504;</span>
+      <div>
+        <h1>GEETA</h1>
+        <p class="tag"><span class="world-name" id="world-name"></span> &middot; I'll never just give you the answer!</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span class="kid-chip" id="kid-name">&hellip;</span>
+      <button id="btn-world" type="button" class="btn ghost small">&#127912; My world</button>
+      <button id="btn-report" class="btn small" disabled>&#11088; I'm done</button>
+      <a id="kid-progress" href="/portal.html" class="btn ghost small">Portal</a>
+      <span id="model-badge" class="badge" title="Where the brain is running" hidden>checking&hellip;</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="buddy-wrap">
+      <div class="mascot state-idle" id="mascot"></div>
+    </div>
+    <div class="hero-text">
+      <p class="buddy-hello" id="buddy-hello"></p>
+      <h2 class="hero-title" id="hero-title"></h2>
+      <p class="hero-sub" id="hero-sub"></p>
+    </div>
+  </section>
+
+  <main class="layout">
+    <!-- LEFT: drawing board -->
+    <section class="panel board-panel" aria-label="Drawing board">
+      <h2>Draw your homework</h2>
+      <div class="board-wrap">
+        <canvas id="board" width="640" height="420"></canvas>
+      </div>
+      <div class="board-tools">
+        <button id="btn-send-board" class="btn primary">&#128228; Send to GEETA</button>
+        <button id="btn-clear" class="btn">&#129529; Clear</button>
+        <button id="btn-attach" type="button" class="btn ghost">&#128247; Attach a photo or PDF</button>
+        <input id="file-attach" type="file" accept="image/*,application/pdf" capture="environment" hidden />
+        <span class="hint">Draw the question, or attach a photo/PDF of your homework page. I'll read it and check with you.</span>
+      </div>
+    </section>
+
+    <!-- RIGHT: chat + voice -->
+    <section class="panel chat-panel" aria-label="Chat">
+      <h2>Chat</h2>
+      <div id="chat" class="chat" role="log" aria-live="polite"></div>
+
+      <form id="composer" class="composer">
+        <button type="button" id="btn-mic" class="icon-btn" title="Speak (voice input)">&#127908;</button>
+        <input id="text-input" type="text" autocomplete="off"
+               placeholder="Type here, or tap the mic…" aria-label="Your message" />
+        <button type="submit" class="btn primary">&#10148;</button>
+      </form>
+
+      <div class="voice-row">
+        <button id="btn-speak" class="icon-btn" title="Hear GEETA out loud">&#128266;</button>
+        <span class="hint">Tap the speaker to hear any reply. Voice is warm and slow.</span>
+      </div>
+
+      <div class="focus-row">
+        <button id="btn-focus" type="button" class="btn ghost small">&#128065;&#65039; Turn on focus helper</button>
+        <div id="focus-preview-wrap" class="focus-preview-wrap" hidden>
+          <video id="focus-preview" muted playsinline></video>
+        </div>
+        <span id="focus-status" class="hint focus-status"></span>
+      </div>
+      <p class="focus-note">
+        Ask a grown-up first! When it's on, GEETA watches if your eyes are on the screen -
+        nothing is ever recorded or saved, only "focused" or "looking away" is shared, live.
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    GEETA guides you step by step and a separate maths engine checks every step.
+    Only a short learning summary goes to your grown-up's portal - never the chat, photos or camera.
+  </footer>
+
+  <dialog class="world-picker" id="world-picker" aria-labelledby="picker-title">
+    <h2 id="picker-title">Pick your world!</h2>
+    <p class="sub" id="picker-sub"></p>
+    <div class="world-grid" id="world-grid"></div>
+    <div class="picker-actions"><button class="btn ghost" type="button" id="picker-close">Close</button></div>
+  </dialog>
+
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <script src="/static/worlds.js?v=1"></script>
+  <script src="/static/kid-world.js?v=2"></script>
+  <script src="/static/app.js?v=12"></script>
+  <script type="module" src="/static/attention.js?v=4"></script>
+</body>
+</html>

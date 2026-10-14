@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEETA - pilot maths check</title>
+  <link rel="stylesheet" href="/static/style.css?v=9" />
+  <link rel="stylesheet" href="/static/portal.css?v=9" />
+</head>
+<body class="print-page">
+  <div class="no-print portal-main" style="padding-top:16px">
+    <a class="btn ghost small" href="/portal.html">&larr; Back</a>
+    <button class="btn primary small" type="button" id="btn-print">Print</button>
+    <p class="form-note">Page 1 is for the child (no answers). Page 2 is the answer key for the grown-up - keep it away from the child.
+      Give the same check before (pre) and after (post) the pilot, then enter the score on the child's Progress panel.</p>
+  </div>
+  <section class="sheet-page">
+    <h1>My maths check</h1>
+    <p>Name / code: ______________ &nbsp; Date: __________ &nbsp; Pre / Post (circle)</p>
+    <ol id="child-items" class="check-items"></ol>
+  </section>
+  <section class="sheet-page key">
+    <h1>Answer key (grown-up only)</h1>
+    <p class="form-note">One mark per question. Accept the same number written another way (e.g. "$4.55" or "4 dollars 55"). Score = number correct out of <span id="out-of"></span>.</p>
+    <ol id="key-items" class="check-items"></ol>
+  </section>
+  <script src="/static/pilot-test.js?v=1"></script>
+</body>
+</html>
