@@ -1,0 +1,27 @@
+{
+ "milestone": "M6",
+ "ocr_source": "real:http://127.0.0.1:8080",
+ "handwriting_char_accuracy": 0.993,
+ "handwriting_gate_85": true,
+ "crohme_char_accuracy": 0.7837,
+ "real_pages": [
+  {
+   "path": "data/processed/pages/homework_ava_week5_p1.png",
+   "ok": true,
+   "chars": 436,
+   "seconds": 2.2,
+   "output_head": "Maths Homework — Week 5\nName: Ava Thompson Class: 2B Date: 12/03/2026\nQ1. 34 + 27 =   51 0/2  \"Check the ones: 4 + 7 = 11 — carry the 1!\"\nQ2. 56 - 28 =   28 2/2  \"Well done — nice working out.\"\nQ3. Mi"
+  },
+  {
+   "path": "data/processed/pages/homework_noah_week5_p1.png",
+   "ok": true,
+   "chars": 395,
+   "seconds": 5.4,
+   "output_head": "Maths Homework — Week 5  \nName: Noah Patel                  Class: 3A                     Date: 12/03/2026  \nQ1. 4 x 5 = __ 20 /2  \nQ2. Share 18 lollies equally between 3 friends. Each friend gets __ "
+  }
+ ],
+ "acceptance": {
+  "#3 OCR char accuracy >= 85% (held-out handwriting)": true
+ },
+ "note": "measured on real:http://127.0.0.1:8080"
+}

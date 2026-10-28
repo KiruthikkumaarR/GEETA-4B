@@ -1,0 +1,141 @@
+[
+ {
+  "id": "geeta-y1-add-sub-20-0001",
+  "skill_id": "y1-add-sub-20",
+  "year": 1,
+  "strand": "Algebra",
+  "acara_code": "AC9M1A01",
+  "question_type": "fill_in",
+  "question_text": "Find: 4 + 12",
+  "answer": "16",
+  "answer_check": {
+   "kind": "number",
+   "value": 16
+  },
+  "solution_steps": [
+   {
+    "step": 1,
+    "expression": "4 + 12",
+    "result": 16,
+    "explanation": "count on from the bigger number, or use a number line"
+   }
+  ],
+  "hint_ladder": [
+   "Start with the bigger number and count on with your fingers — one jump per little bit.",
+   "Try counting on 12 from 4. Where do you land?",
+   "Use a number line: put your finger on the bigger number, then hop forward 12 times."
+  ],
+  "similar_worked": {
+   "question": "8 + 14 = ?",
+   "answer": "22",
+   "steps": [
+    {
+     "step": 1,
+     "expression": "8 + 14",
+     "result": 22,
+     "explanation": "count on or tens-then-ones"
+    }
+   ]
+  },
+  "story_reframe": "Picture this at the playground: you have 4 lollies and then you get 12 more. Can you work out the total yourself?",
+  "difficulty": 1,
+  "tags": [
+   "addition",
+   "within12",
+   "no_regrouping"
+  ],
+  "source": "acara_y1-3_bank"
+ },
+ {
+  "id": "geeta-y3-money-0001",
+  "skill_id": "y3-money",
+  "year": 3,
+  "strand": "Number",
+  "acara_code": "AC9M3N06",
+  "question_type": "word_problem",
+  "question_text": "You buy a lolly bar for $47.20 and pay with a $50 note. How much change do you get?",
+  "answer": "$2.80",
+  "answer_check": {
+   "kind": "money",
+   "value": 280
+  },
+  "solution_steps": [
+   {
+    "step": 1,
+    "expression": "50.00 - 47.20",
+    "result": "2.80",
+    "explanation": "take the price off the note"
+   }
+  ],
+  "hint_ladder": [
+   "Start from the price and count UP to the note — counting up is easier!",
+   "From $47.20, how much more to the next dollar?",
+   "Then count from that dollar up to $50. Add the two jumps."
+  ],
+  "similar_worked": {
+   "question": "You have 13 dollar notes and 25c in coins. What is your total?",
+   "answer": "$13.25",
+   "steps": [
+    {
+     "step": 1,
+     "expression": "1325",
+     "result": "13.25",
+     "explanation": "dollars then cents"
+    }
+   ]
+  },
+  "story_reframe": "At the canteen, you pay with a $50 note. The shopkeeper counts your change back — can you check it?",
+  "difficulty": 2,
+  "tags": [
+   "money",
+   "change"
+  ],
+  "source": "acara_y1-3_bank"
+ },
+ {
+  "id": "geeta-y2-fractions-0001",
+  "skill_id": "y2-fractions",
+  "year": 2,
+  "strand": "Number",
+  "acara_code": "AC9M2N04",
+  "question_type": "word_problem",
+  "question_text": "Share 6 stamps equally into 3 groups. How many in each group?",
+  "answer": "2",
+  "answer_check": {
+   "kind": "number",
+   "value": 2
+  },
+  "solution_steps": [
+   {
+    "step": 1,
+    "expression": "6 / 3",
+    "result": 2,
+    "explanation": "split into 3 equal groups"
+   }
+  ],
+  "hint_ladder": [
+   "1/3 means split into 3 equal groups and take ONE group.",
+   "How many fit in each equal pile?",
+   "Count them out in 3 equal piles."
+  ],
+  "similar_worked": {
+   "question": "What is 1/4 of 12?",
+   "answer": "3",
+   "steps": [
+    {
+     "step": 1,
+     "expression": "12/4",
+     "result": 3,
+     "explanation": "equal groups"
+    }
+   ]
+  },
+  "story_reframe": "Split them into equal bags, one bag for each friend. How many in each bag?",
+  "difficulty": 1,
+  "tags": [
+   "fractions",
+   "denom_3"
+  ],
+  "source": "acara_y1-3_bank"
+ }
+]

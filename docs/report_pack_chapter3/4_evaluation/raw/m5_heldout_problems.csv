@@ -1,0 +1,251 @@
+# Model geeta-4b Q4_K_M (served, llama.cpp) + Python exact tutor; dataset heldout_problems.jsonl (249 synthetic ACARA Y1-3); run 13 Oct 2026. path=python: exact tutor; other paths = model + verifier.
+id,skill_id,year,path,expected,delivered,verified,fallback_used,attempts
+geeta-y1-add-sub-100-0032,y1-add-sub-100,1,python,49,49.0,True,False,1
+geeta-y1-add-sub-100-0028,y1-add-sub-100,1,python,65,65.0,True,False,1
+geeta-y1-add-sub-100-0035,y1-add-sub-100,1,python,48,48.0,True,False,1
+geeta-y1-add-sub-100-0040,y1-add-sub-100,1,model,31,31.0,True,False,2
+geeta-y1-add-sub-100-0010,y1-add-sub-100,1,python,33,33.0,True,False,1
+geeta-y1-add-sub-100-0021,y1-add-sub-100,1,model,44,44.0,True,False,3
+geeta-y1-add-sub-100-0044,y1-add-sub-100,1,model,103,103.0,True,False,2
+geeta-y1-add-sub-100-0027,y1-add-sub-100,1,model,108,108.0,True,False,3
+geeta-y1-add-sub-100-0012,y1-add-sub-100,1,python,48,48.0,True,False,1
+geeta-y1-add-sub-100-0025,y1-add-sub-100,1,model,18,18.0,True,False,2
+geeta-y1-add-sub-100-0005,y1-add-sub-100,1,python,129,129.0,True,False,1
+geeta-y1-add-sub-20-0002,y1-add-sub-20,1,python,3,3.0,True,False,1
+geeta-y1-add-sub-20-0059,y1-add-sub-20,1,model,7,7.0,True,False,2
+geeta-y1-add-sub-20-0008,y1-add-sub-20,1,model,3,3.0,True,False,2
+geeta-y1-add-sub-20-0047,y1-add-sub-20,1,model,25,25.0,True,False,2
+geeta-y1-add-sub-20-0051,y1-add-sub-20,1,python,14,14.0,True,False,1
+geeta-y1-add-sub-20-0011,y1-add-sub-20,1,model,23,23.0,True,False,1
+geeta-y1-add-sub-20-0036,y1-add-sub-20,1,python,10,10.0,True,False,1
+geeta-y1-add-sub-20-0020,y1-add-sub-20,1,python,18,18.0,True,False,1
+geeta-y1-add-sub-20-0018,y1-add-sub-20,1,model,12,12.0,True,False,1
+geeta-y1-add-sub-20-0003,y1-add-sub-20,1,model,26,26.0,True,False,2
+geeta-y1-add-sub-20-0060,y1-add-sub-20,1,model,1,no-answer-fallback,False,True,4
+geeta-y1-add-sub-20-0038,y1-add-sub-20,1,python,18,18.0,True,False,1
+geeta-y1-add-sub-20-0013,y1-add-sub-20,1,python,11,11.0,True,False,1
+geeta-y1-add-sub-20-0037,y1-add-sub-20,1,python,6,6.0,True,False,1
+geeta-y1-counting-0018,y1-counting,1,python,57,57.0,True,False,1
+geeta-y1-counting-0005,y1-counting,1,python,45,45.0,True,False,1
+geeta-y1-counting-0027,y1-counting,1,python,13,13.0,True,False,1
+geeta-y1-counting-0034,y1-counting,1,python,55,55.0,True,False,1
+geeta-y1-counting-0013,y1-counting,1,python,51,51.0,True,False,1
+geeta-y1-counting-0022,y1-counting,1,python,33,33.0,True,False,1
+geeta-y1-counting-0001,y1-counting,1,python,24,24.0,True,False,1
+geeta-y1-counting-0008,y1-counting,1,python,41,41.0,True,False,1
+geeta-y1-counting-0020,y1-counting,1,python,56,56.0,True,False,1
+geeta-y1-fraction-half-0010,y1-fraction-half,1,model,2,2.0,True,False,1
+geeta-y1-fraction-half-0018,y1-fraction-half,1,python,9,9.0,True,False,1
+geeta-y1-fraction-half-0019,y1-fraction-half,1,model,3,3.0,True,False,1
+geeta-y1-fraction-half-0025,y1-fraction-half,1,model,14,14.0,True,False,2
+geeta-y1-fraction-half-0014,y1-fraction-half,1,python,6,6.0,True,False,1
+geeta-y1-fraction-half-0020,y1-fraction-half,1,model,4,no-answer-fallback,False,True,4
+geeta-y1-money-0017,y1-money,1,deterministic,$2.10,$2.10,True,False,1
+geeta-y1-money-0009,y1-money,1,deterministic,$22.55,$22.55,True,False,1
+geeta-y1-money-0018,y1-money,1,deterministic,$16.20,$16.20,True,False,1
+geeta-y1-money-0026,y1-money,1,deterministic,$24.30,$24.30,True,False,1
+geeta-y1-money-0006,y1-money,1,deterministic,$7.50,$7.50,True,False,1
+geeta-y1-money-0030,y1-money,1,deterministic,$23.00,$23.00,True,False,1
+geeta-y1-money-0016,y1-money,1,deterministic,$1.60,$1.60,True,False,1
+geeta-y1-money-0024,y1-money,1,deterministic,$11.00,$11.00,True,False,1
+geeta-y1-money-0023,y1-money,1,deterministic,$27.50,$27.50,True,False,1
+geeta-y1-number-100-0029,y1-number-100,1,model,eighty five,eighty five,True,False,1
+geeta-y1-number-100-0015,y1-number-100,1,model,eighty three,eighty three,True,False,1
+geeta-y1-number-100-0054,y1-number-100,1,python,58,58.0,True,False,1
+geeta-y1-number-100-0036,y1-number-100,1,model,seventy one,seventy one,True,False,1
+geeta-y1-number-100-0037,y1-number-100,1,model,twenty six,twenty six,True,False,1
+geeta-y1-number-100-0001,y1-number-100,1,model,ninety eight,ninety eight,True,False,1
+geeta-y1-number-100-0006,y1-number-100,1,python,100,100.0,True,False,1
+geeta-y1-number-100-0024,y1-number-100,1,python,50,50.0,True,False,1
+geeta-y1-number-100-0059,y1-number-100,1,python,100,100.0,True,False,1
+geeta-y1-number-100-0035,y1-number-100,1,python,47,47.0,True,False,1
+geeta-y1-number-100-0055,y1-number-100,1,python,97,97.0,True,False,1
+geeta-y1-number-100-0047,y1-number-100,1,python,100,100.0,True,False,1
+geeta-y1-number-100-0046,y1-number-100,1,model,twenty one,twenty one,True,False,1
+geeta-y1-number-100-0053,y1-number-100,1,model,sixty three,sixty three,True,False,1
+geeta-y1-place-value-0036,y1-place-value,1,python,9 tens and 7 ones,9 tens and 7 ones,True,False,1
+geeta-y1-place-value-0023,y1-place-value,1,python,7 tens and 1 ones,7 tens and 1 ones,True,False,1
+geeta-y1-place-value-0046,y1-place-value,1,python,10,10.0,True,False,1
+geeta-y1-place-value-0029,y1-place-value,1,python,47,47.0,True,False,1
+geeta-y1-place-value-0044,y1-place-value,1,python,1 tens and 0 ones,1 tens and 0 ones,True,False,1
+geeta-y1-place-value-0022,y1-place-value,1,python,91,91.0,True,False,1
+geeta-y1-place-value-0019,y1-place-value,1,python,6 tens and 6 ones,6 tens and 6 ones,True,False,1
+geeta-y1-place-value-0025,y1-place-value,1,python,31,31.0,True,False,1
+geeta-y1-place-value-0037,y1-place-value,1,python,9 tens and 1 ones,9 tens and 1 ones,True,False,1
+geeta-y1-place-value-0011,y1-place-value,1,python,5 tens and 8 ones,5 tens and 8 ones,True,False,1
+geeta-y1-place-value-0027,y1-place-value,1,python,62,62.0,True,False,1
+geeta-y1-shapes-0016,y1-shapes,1,model,cylinder,cylinder,True,False,1
+geeta-y1-shapes-0006,y1-shapes,1,python,5,5.0,True,False,1
+geeta-y1-shapes-0002,y1-shapes,1,model,triangle,triangle,True,False,1
+geeta-y1-shapes-0015,y1-shapes,1,python,pentagon,pentagon,True,False,1
+geeta-y1-time-0025,y1-time,1,model,2:00,no-answer-fallback,False,True,4
+geeta-y1-time-0021,y1-time,1,model,12:00,12:00,True,False,1
+geeta-y1-time-0003,y1-time,1,model,5:00,5:00,True,False,2
+geeta-y1-time-0002,y1-time,1,model,11:00,11:00,True,False,1
+geeta-y1-time-0015,y1-time,1,model,8:00,8:00,True,False,2
+geeta-y1-time-0005,y1-time,1,model,8:30,8:30,True,False,2
+geeta-y1-time-0017,y1-time,1,model,6:30,6:30,True,False,3
+geeta-y2-add-sub-0036,y2-add-sub,2,python,478,478.0,True,False,1
+geeta-y2-add-sub-0051,y2-add-sub,2,model,94,no-answer-fallback,False,True,4
+geeta-y2-add-sub-0019,y2-add-sub,2,python,758,758.0,True,False,1
+geeta-y2-add-sub-0042,y2-add-sub,2,python,498,498.0,True,False,1
+geeta-y2-add-sub-0014,y2-add-sub,2,python,101,101.0,True,False,1
+geeta-y2-add-sub-0052,y2-add-sub,2,model,16,no-answer-fallback,False,True,4
+geeta-y2-add-sub-0030,y2-add-sub,2,model,442,442.0,True,False,2
+geeta-y2-add-sub-0024,y2-add-sub,2,python,465,465.0,True,False,1
+geeta-y2-add-sub-0004,y2-add-sub,2,python,527,527.0,True,False,1
+geeta-y2-add-sub-0007,y2-add-sub,2,python,95,95.0,True,False,1
+geeta-y2-add-sub-0041,y2-add-sub,2,python,53,53.0,True,False,1
+geeta-y2-add-sub-0059,y2-add-sub,2,python,781,781.0,True,False,1
+geeta-y2-add-sub-0031,y2-add-sub,2,python,447,447.0,True,False,1
+geeta-y2-add-sub-0001,y2-add-sub,2,python,404,404.0,True,False,1
+geeta-y2-fractions-0005,y2-fractions,2,python,4,4.0,True,False,1
+geeta-y2-fractions-0022,y2-fractions,2,model,3,3.0,True,False,4
+geeta-y2-fractions-0002,y2-fractions,2,model,12,12.0,True,False,1
+geeta-y2-fractions-0010,y2-fractions,2,model,shape divided into 4 equal parts with 1 shaded,no-answer-fallback,False,True,4
+geeta-y2-fractions-0029,y2-fractions,2,python,14,14.0,True,False,1
+geeta-y2-fractions-0003,y2-fractions,2,model,shape divided into 3 equal parts with 1 shaded,shape divided into 3 equal parts with 1 shaded,True,False,2
+geeta-y2-fractions-0034,y2-fractions,2,model,3,3.0,True,False,3
+geeta-y2-fractions-0023,y2-fractions,2,model,7,7.0,True,False,2
+geeta-y2-money-0024,y2-money,2,deterministic,$13.20,$13.20,True,False,1
+geeta-y2-money-0006,y2-money,2,deterministic,$6.20,$6.20,True,False,1
+geeta-y2-money-0005,y2-money,2,deterministic,$30.05,$30.05,True,False,1
+geeta-y2-money-0007,y2-money,2,deterministic,$1.55,$1.55,True,False,1
+geeta-y2-money-0003,y2-money,2,deterministic,$11.20,$11.20,True,False,1
+geeta-y2-money-0039,y2-money,2,deterministic,$9.40,$9.40,True,False,1
+geeta-y2-money-0017,y2-money,2,deterministic,$5.75,$5.75,True,False,1
+geeta-y2-money-0018,y2-money,2,deterministic,$17.20,$17.20,True,False,1
+geeta-y2-money-0037,y2-money,2,deterministic,$7.60,$7.60,True,False,1
+geeta-y2-number-1000-0005,y2-number-1000,2,python,892,892.0,True,False,1
+geeta-y2-number-1000-0014,y2-number-1000,2,python,850,850.0,True,False,1
+geeta-y2-number-1000-0020,y2-number-1000,2,python,874,874.0,True,False,1
+geeta-y2-number-1000-0044,y2-number-1000,2,python,610,610.0,True,False,1
+geeta-y2-number-1000-0023,y2-number-1000,2,python,570,570.0,True,False,1
+geeta-y2-number-1000-0012,y2-number-1000,2,model,five hundred seventy six,five hundred seventy six,True,False,1
+geeta-y2-number-1000-0046,y2-number-1000,2,model,two hundred forty nine,two hundred forty nine,True,False,1
+geeta-y2-number-1000-0049,y2-number-1000,2,model,eight hundred twenty nine,eight hundred twenty nine,True,False,1
+geeta-y2-number-1000-0036,y2-number-1000,2,python,900,900.0,True,False,1
+geeta-y2-number-1000-0022,y2-number-1000,2,python,200,200.0,True,False,1
+geeta-y2-number-1000-0041,y2-number-1000,2,model,six hundred ten,six hundred ten,True,False,2
+geeta-y2-patterns-0029,y2-patterns,2,python,64,64.0,True,False,1
+geeta-y2-patterns-0018,y2-patterns,2,python,20,20.0,True,False,1
+geeta-y2-patterns-0022,y2-patterns,2,python,29,29.0,True,False,1
+geeta-y2-patterns-0002,y2-patterns,2,python,63,63.0,True,False,1
+geeta-y2-patterns-0034,y2-patterns,2,python,36,36.0,True,False,1
+geeta-y2-patterns-0035,y2-patterns,2,python,42,42.0,True,False,1
+geeta-y2-patterns-0024,y2-patterns,2,python,21,21.0,True,False,1
+geeta-y2-patterns-0027,y2-patterns,2,python,15,15.0,True,False,1
+geeta-y2-place-value-0047,y2-place-value,2,python,0 tens and 4 ones,0 tens and 4 ones,True,False,1
+geeta-y2-place-value-0034,y2-place-value,2,python,245,245.0,True,False,1
+geeta-y2-place-value-0037,y2-place-value,2,python,163,163.0,True,False,1
+geeta-y2-place-value-0030,y2-place-value,2,python,271,271.0,True,False,1
+geeta-y2-place-value-0010,y2-place-value,2,python,59,59.0,True,False,1
+geeta-y2-place-value-0041,y2-place-value,2,python,83,83.0,True,False,1
+geeta-y2-place-value-0027,y2-place-value,2,python,6 tens and 9 ones,6 tens and 9 ones,True,False,1
+geeta-y2-place-value-0001,y2-place-value,2,python,7 tens and 5 ones,7 tens and 5 ones,True,False,1
+geeta-y2-place-value-0045,y2-place-value,2,python,565,565.0,True,False,1
+geeta-y2-place-value-0050,y2-place-value,2,python,7 tens and 8 ones,7 tens and 8 ones,True,False,1
+geeta-y2-place-value-0023,y2-place-value,2,python,331,331.0,True,False,1
+geeta-y2-time-0014,y2-time,2,model,8:45,no-answer-fallback,False,True,4
+geeta-y2-time-0023,y2-time,2,model,7:15,no-answer-fallback,False,True,4
+geeta-y2-time-0032,y2-time,2,model,1:15,no-answer-fallback,False,True,4
+geeta-y2-time-0035,y2-time,2,model,9:15,9:15,True,False,1
+geeta-y2-time-0018,y2-time,2,model,5:30,5:30,True,False,1
+geeta-y2-time-0010,y2-time,2,model,4:45,no-answer-fallback,False,True,4
+geeta-y2-time-0002,y2-time,2,model,6:00,6:00,True,False,2
+geeta-y2-time-0024,y2-time,2,model,3:00,3:00,True,False,1
+geeta-y2-times-2-0022,y2-times-2,2,python,18,18.0,True,False,1
+geeta-y2-times-2-0003,y2-times-2,2,python,4,4.0,True,False,1
+geeta-y2-times-2-0011,y2-times-2,2,python,6,6.0,True,False,1
+geeta-y2-times-2-0017,y2-times-2,2,python,20,20.0,True,False,1
+geeta-y2-times-2-0023,y2-times-2,2,python,4,4.0,True,False,1
+geeta-y2-times-2-0001,y2-times-2,2,python,16,16.0,True,False,1
+geeta-y3-add-sub-0009,y3-add-sub,3,python,1315,1315.0,True,False,1
+geeta-y3-add-sub-0021,y3-add-sub,3,python,6488,6488.0,True,False,1
+geeta-y3-add-sub-0003,y3-add-sub,3,model,10176,10176.0,True,False,3
+geeta-y3-add-sub-0050,y3-add-sub,3,model,11651,no-answer-fallback,False,True,4
+geeta-y3-add-sub-0014,y3-add-sub,3,model,8936,8936.0,True,False,2
+geeta-y3-add-sub-0027,y3-add-sub,3,python,11573,11573.0,True,False,1
+geeta-y3-add-sub-0044,y3-add-sub,3,model,5299,5299.0,True,False,3
+geeta-y3-add-sub-0037,y3-add-sub,3,python,9875,9875.0,True,False,1
+geeta-y3-add-sub-0051,y3-add-sub,3,python,7493,7493.0,True,False,1
+geeta-y3-add-sub-0017,y3-add-sub,3,python,6838,6838.0,True,False,1
+geeta-y3-add-sub-0010,y3-add-sub,3,model,1310,no-answer-fallback,False,True,4
+geeta-y3-add-sub-0024,y3-add-sub,3,python,10955,10955.0,True,False,1
+geeta-y3-add-sub-0041,y3-add-sub,3,model,6763,6763.0,True,False,3
+geeta-y3-division-0015,y3-division,3,python,6,6.0,True,False,1
+geeta-y3-division-0022,y3-division,3,python,3,3.0,True,False,1
+geeta-y3-division-0038,y3-division,3,python,5,5.0,True,False,1
+geeta-y3-division-0028,y3-division,3,python,2,2.0,True,False,1
+geeta-y3-division-0018,y3-division,3,python,5,5.0,True,False,1
+geeta-y3-division-0035,y3-division,3,python,4,4.0,True,False,1
+geeta-y3-division-0034,y3-division,3,python,6,6.0,True,False,1
+geeta-y3-division-0003,y3-division,3,python,2,2.0,True,False,1
+geeta-y3-division-0012,y3-division,3,python,6,6.0,True,False,1
+geeta-y3-fractions-set-0007,y3-fractions-set,3,model,one whole,no-answer-fallback,False,True,4
+geeta-y3-fractions-set-0012,y3-fractions-set,3,model,2,2.0,True,False,2
+geeta-y3-fractions-set-0021,y3-fractions-set,3,python,3,3.0,True,False,1
+geeta-y3-fractions-set-0004,y3-fractions-set,3,model,one whole,one whole,True,False,3
+geeta-y3-fractions-set-0043,y3-fractions-set,3,python,9,9.0,True,False,1
+geeta-y3-fractions-set-0019,y3-fractions-set,3,python,3,3.0,True,False,1
+geeta-y3-fractions-set-0005,y3-fractions-set,3,python,4,4.0,True,False,1
+geeta-y3-fractions-set-0045,y3-fractions-set,3,python,7,7.0,True,False,1
+geeta-y3-fractions-set-0002,y3-fractions-set,3,python,2,2.0,True,False,1
+geeta-y3-fractions-set-0037,y3-fractions-set,3,model,2,2.0,True,False,3
+geeta-y3-missing-value-0004,y3-missing-value,3,python,81,81.0,True,False,1
+geeta-y3-missing-value-0022,y3-missing-value,3,python,272,272.0,True,False,1
+geeta-y3-missing-value-0040,y3-missing-value,3,python,358,358.0,True,False,1
+geeta-y3-missing-value-0021,y3-missing-value,3,python,20,20.0,True,False,1
+geeta-y3-missing-value-0036,y3-missing-value,3,python,38,38.0,True,False,1
+geeta-y3-missing-value-0028,y3-missing-value,3,python,362,362.0,True,False,1
+geeta-y3-missing-value-0009,y3-missing-value,3,python,295,295.0,True,False,1
+geeta-y3-missing-value-0030,y3-missing-value,3,python,92,92.0,True,False,1
+geeta-y3-missing-value-0031,y3-missing-value,3,python,579,579.0,True,False,1
+geeta-y3-missing-value-0016,y3-missing-value,3,python,93,93.0,True,False,1
+geeta-y3-money-0014,y3-money,3,python,$20.00,$20.00,True,False,1
+geeta-y3-money-0017,y3-money,3,python,$14.40,$14.40,True,False,1
+geeta-y3-money-0040,y3-money,3,python,$26.95,$26.95,True,False,1
+geeta-y3-money-0022,y3-money,3,python,$21.75,$21.75,True,False,1
+geeta-y3-money-0012,y3-money,3,python,$14.25,$14.25,True,False,1
+geeta-y3-money-0021,y3-money,3,python,$5.55,$5.55,True,False,1
+geeta-y3-money-0020,y3-money,3,python,$12.50,$12.50,True,False,1
+geeta-y3-money-0027,y3-money,3,python,$3.80,$3.80,True,False,1
+geeta-y3-money-0010,y3-money,3,python,$21.80,$21.80,True,False,1
+geeta-y3-money-0031,y3-money,3,python,$24.55,$24.55,True,False,1
+geeta-y3-number-10000-0022,y3-number-10000,3,model,five thousand four hundred twenty three,five thousand four hundred twenty three,True,False,2
+geeta-y3-number-10000-0037,y3-number-10000,3,model,six thousand seven hundred eighty four,six thousand seven hundred eighty four,True,False,1
+geeta-y3-number-10000-0015,y3-number-10000,3,model,300,300.0,True,False,3
+geeta-y3-number-10000-0018,y3-number-10000,3,model,six thousand nine hundred forty one,no-answer-fallback,False,True,4
+geeta-y3-number-10000-0032,y3-number-10000,3,model,60,60.0,True,False,2
+geeta-y3-number-10000-0034,y3-number-10000,3,model,two thousand three hundred forty one,two thousand three hundred forty one,True,False,1
+geeta-y3-number-10000-0036,y3-number-10000,3,python,"8,700",8700.0,True,False,1
+geeta-y3-number-10000-0014,y3-number-10000,3,model,three thousand four hundred seventy five,three thousand four hundred seventy five,True,False,2
+geeta-y3-number-10000-0017,y3-number-10000,3,model,eight thousand seven hundred eighty seven,eight thousand seven hundred eighty seven,True,False,1
+geeta-y3-number-10000-0001,y3-number-10000,3,python,"4,992",4992.0,True,False,1
+geeta-y3-odd-even-0020,y3-odd-even,3,model,odd,odd,True,False,1
+geeta-y3-odd-even-0024,y3-odd-even,3,python,even,even,True,False,1
+geeta-y3-odd-even-0016,y3-odd-even,3,python,even,even,True,False,1
+geeta-y3-odd-even-0011,y3-odd-even,3,model,odd,odd,True,False,1
+geeta-y3-odd-even-0026,y3-odd-even,3,model,even,even,True,False,1
+geeta-y3-odd-even-0001,y3-odd-even,3,model,odd,odd,True,False,1
+geeta-y3-odd-even-0019,y3-odd-even,3,python,odd,odd,True,False,1
+geeta-y3-time-0019,y3-time,3,model,5:40,no-answer-fallback,False,True,4
+geeta-y3-time-0018,y3-time,3,model,7:25,7:25,True,False,4
+geeta-y3-time-0014,y3-time,3,model,6:55,6:55,True,False,2
+geeta-y3-time-0016,y3-time,3,model,4:25,4:25,True,False,4
+geeta-y3-time-0006,y3-time,3,model,7:00,7:00,True,False,2
+geeta-y3-time-0007,y3-time,3,model,9:25,9:25,True,False,2
+geeta-y3-times-0011,y3-times,3,python,12,12.0,True,False,1
+geeta-y3-times-0047,y3-times,3,python,27,27.0,True,False,1
+geeta-y3-times-0017,y3-times,3,python,27,27.0,True,False,1
+geeta-y3-times-0054,y3-times,3,python,18,18.0,True,False,1
+geeta-y3-times-0008,y3-times,3,python,60,60.0,True,False,1
+geeta-y3-times-0050,y3-times,3,python,35,35.0,True,False,1
+geeta-y3-times-0003,y3-times,3,python,80,80.0,True,False,1
+geeta-y3-times-0016,y3-times,3,python,12,12.0,True,False,1
+geeta-y3-times-0014,y3-times,3,python,18,18.0,True,False,1
+geeta-y3-times-0048,y3-times,3,python,15,15.0,True,False,1
+geeta-y3-times-0044,y3-times,3,python,36,36.0,True,False,1
+geeta-y3-times-0057,y3-times,3,python,20,20.0,True,False,1
+geeta-y3-times-0035,y3-times,3,python,21,21.0,True,False,1
+geeta-y3-times-0049,y3-times,3,python,30,30.0,True,False,1

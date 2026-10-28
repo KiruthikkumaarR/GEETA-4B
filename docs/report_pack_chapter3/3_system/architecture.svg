@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 860" width="1400" height="860" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+    <style>
+      .t{font-size:15px;font-weight:700;fill:#0f172a}
+      .s{font-size:12px;fill:#334155}
+      .h{font-size:19px;font-weight:700;fill:#0f172a}
+      .l{font-size:12px;fill:#475569;font-style:italic}
+      .b{fill:#f8fafc;stroke:#64748b;stroke-width:1.4}
+      .py{fill:#ecfdf5;stroke:#059669;stroke-width:1.6}
+      .ai{fill:#eff6ff;stroke:#2563eb;stroke-width:1.6}
+      .st{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4}
+      .e{stroke:#475569;stroke-width:1.6;fill:none;marker-end:url(#ar)}
+      .d{stroke:#475569;stroke-width:1.4;fill:none;stroke-dasharray:6 5;marker-end:url(#ar)}
+    </style>
+  </defs>
+  <rect width="1400" height="860" fill="#ffffff"/>
+
+  <!-- ===== RUNTIME ===== -->
+  <text x="30" y="40" class="h">A. Runtime: one tutoring turn (all on one local Mac)</text>
+
+  <rect x="30" y="65" width="190" height="96" rx="10" class="b"/>
+  <text x="125" y="95" text-anchor="middle" class="t">Child (browser)</text>
+  <text x="125" y="117" text-anchor="middle" class="s">draw · photo/PDF</text>
+  <text x="125" y="134" text-anchor="middle" class="s">type · speak (Web Speech)</text>
+  <text x="125" y="151" text-anchor="middle" class="s">kid world + buddy</text>
+
+  <rect x="270" y="65" width="200" height="96" rx="10" class="b"/>
+  <text x="370" y="95" text-anchor="middle" class="t">FastAPI web app</text>
+  <text x="370" y="117" text-anchor="middle" class="s">sign-in, CSRF, rate limits</text>
+  <text x="370" y="134" text-anchor="middle" class="s">16 MB cap, image re-encode</text>
+  <text x="370" y="151" text-anchor="middle" class="s">TutorSession (in memory)</text>
+
+  <rect x="520" y="65" width="210" height="96" rx="10" class="ai"/>
+  <text x="625" y="95" text-anchor="middle" class="t">GEETA 4B: OCR</text>
+  <text x="625" y="117" text-anchor="middle" class="s">vision path (mmproj)</text>
+  <text x="625" y="134" text-anchor="middle" class="s">temp 0.1 · transcribe only</text>
+  <text x="625" y="151" text-anchor="middle" class="s">child confirms the text</text>
+
+  <rect x="780" y="65" width="200" height="96" rx="10" class="py"/>
+  <text x="880" y="95" text-anchor="middle" class="t">Worksheet splitter</text>
+  <text x="880" y="117" text-anchor="middle" class="s">numbered items, 26a/26b</text>
+  <text x="880" y="134" text-anchor="middle" class="s">child picks a question</text>
+  <text x="880" y="151" text-anchor="middle" class="s">tracks unfinished items</text>
+
+  <rect x="1030" y="65" width="340" height="96" rx="10" class="py"/>
+  <text x="1200" y="95" text-anchor="middle" class="t">Python exact tutor (~30 question types)</text>
+  <text x="1200" y="117" text-anchor="middle" class="s">parse → compute answer → plan small steps</text>
+  <text x="1200" y="134" text-anchor="middle" class="s">judge each number exactly, diagnose the slip</text>
+  <text x="1200" y="151" text-anchor="middle" class="s">writes the hint in the buddy's voice</text>
+
+  <path d="M220 113 H268" class="e"/>
+  <path d="M470 113 H518" class="e"/>
+  <path d="M730 113 H778" class="e"/>
+  <path d="M980 113 H1028" class="e"/>
+  <text x="494" y="58" text-anchor="middle" class="l">photo</text>
+
+  <!-- fallback -->
+  <rect x="1030" y="215" width="340" height="96" rx="10" class="ai"/>
+  <text x="1200" y="245" text-anchor="middle" class="t">GEETA 4B: tutor fallback</text>
+  <text x="1200" y="267" text-anchor="middle" class="s">only when Python cannot read the question</text>
+  <text x="1200" y="284" text-anchor="middle" class="s">internal JSON solve (WORK_SYSTEM) + hint</text>
+  <text x="1200" y="301" text-anchor="middle" class="s">llama.cpp, Q4_K_M, thinking off</text>
+  <path d="M1200 161 V213" class="d"/>
+  <text x="1210" y="193" class="l">can't parse → refuse to guess</text>
+
+  <rect x="660" y="215" width="320" height="96" rx="10" class="py"/>
+  <text x="820" y="245" text-anchor="middle" class="t">Verifier + reply gate</text>
+  <text x="820" y="267" text-anchor="middle" class="s">recompute every step (zero tolerance, 3 retries)</text>
+  <text x="820" y="284" text-anchor="middle" class="s">block false sums, praise of wrong answers,</text>
+  <text x="820" y="301" text-anchor="middle" class="s">invented numbers → safe fallback reply</text>
+  <path d="M1028 263 H982" class="e"/>
+
+  <rect x="330" y="215" width="280" height="96" rx="10" class="py"/>
+  <text x="470" y="245" text-anchor="middle" class="t">Leak guard (every reply)</text>
+  <text x="470" y="267" text-anchor="middle" class="s">answer in digits, words, $/c,</text>
+  <text x="470" y="284" text-anchor="middle" class="s">reformulations → block + re-prompt</text>
+  <text x="470" y="301" text-anchor="middle" class="s">PII scrub (phone, address, email)</text>
+  <path d="M658 263 H612" class="e"/>
+  <path d="M1110 161 C1110 190 900 190 870 213" class="e"/>
+  <text x="960" y="200" class="l">exact path</text>
+
+  <rect x="30" y="215" width="250" height="96" rx="10" class="b"/>
+  <text x="155" y="245" text-anchor="middle" class="t">Reply to child</text>
+  <text x="155" y="267" text-anchor="middle" class="s">one small hint, &lt; 50 words</text>
+  <text x="155" y="284" text-anchor="middle" class="s">browser TTS (rate 0.88)</text>
+  <text x="155" y="301" text-anchor="middle" class="s">never the final answer</text>
+  <path d="M328 263 H282" class="e"/>
+
+  <!-- storage -->
+  <rect x="30" y="360" width="400" height="86" rx="10" class="st"/>
+  <text x="230" y="390" text-anchor="middle" class="t">Portal store (SQLite, local, mode 600)</text>
+  <text x="230" y="412" text-anchor="middle" class="s">learning summary only: skills, solved/tried, hints, slips</text>
+  <text x="230" y="429" text-anchor="middle" class="s">NO chat text, photos, audio or camera frames</text>
+  <rect x="480" y="360" width="400" height="86" rx="10" class="st"/>
+  <text x="680" y="390" text-anchor="middle" class="t">Reports</text>
+  <text x="680" y="412" text-anchor="middle" class="s">parent PDF per session · nightly parent email 22:30</text>
+  <text x="680" y="429" text-anchor="middle" class="s">admin technical PDF · parent/tutor/admin portals</text>
+  <rect x="930" y="360" width="440" height="86" rx="10" class="b"/>
+  <text x="1150" y="390" text-anchor="middle" class="t">Access</text>
+  <text x="1150" y="412" text-anchor="middle" class="s">Cloudflare quick tunnel (HTTPS) → localhost:8090</text>
+  <text x="1150" y="429" text-anchor="middle" class="s">argon2 passwords, TOTP 2-step, kid picture + PIN</text>
+  <path d="M155 311 V358" class="d"/>
+  <path d="M430 403 H478" class="e"/>
+
+  <!-- ===== TRAINING ===== -->
+  <line x1="30" y1="485" x2="1370" y2="485" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="30" y="525" class="h">B. Offline: data → training → deployed model</text>
+
+  <rect x="30" y="550" width="250" height="150" rx="10" class="b"/>
+  <text x="155" y="578" text-anchor="middle" class="t">Data sources</text>
+  <text x="155" y="600" text-anchor="middle" class="s">ACARA v9 Y1–3 bank (1,090)</text>
+  <text x="155" y="618" text-anchor="middle" class="s">GSM8K easy subset (40)</text>
+  <text x="155" y="636" text-anchor="middle" class="s">CROHME handwriting (1,000+200)</text>
+  <text x="155" y="654" text-anchor="middle" class="s">synthetic kid-style handwriting</text>
+  <text x="155" y="672" text-anchor="middle" class="s">consented Y2 worksheets (12)</text>
+  <text x="155" y="690" text-anchor="middle" class="s">TinyStories ~1% (story exp.)</text>
+
+  <rect x="320" y="550" width="250" height="150" rx="10" class="b"/>
+  <text x="445" y="578" text-anchor="middle" class="t">Dataset assembly</text>
+  <text x="445" y="600" text-anchor="middle" class="s">hint-ladder dialogues (400)</text>
+  <text x="445" y="618" text-anchor="middle" class="s">never-reveal refusals (150)</text>
+  <text x="445" y="636" text-anchor="middle" class="s">re-engagement arcs (100)</text>
+  <text x="445" y="654" text-anchor="middle" class="s">PII scrub + audit (0 events)</text>
+  <text x="445" y="672" text-anchor="middle" class="s">stratified split, SHA-256 locked</text>
+  <text x="445" y="690" text-anchor="middle" class="s">held-out 249 never trained on</text>
+
+  <rect x="610" y="550" width="250" height="150" rx="10" class="ai"/>
+  <text x="735" y="578" text-anchor="middle" class="t">MLX fine-tune (M4 Max)</text>
+  <text x="735" y="600" text-anchor="middle" class="s">base Qwen3.5-4B (8-bit MLX)</text>
+  <text x="735" y="618" text-anchor="middle" class="s">text LoRA r16, 16 layers, lr 1e-5</text>
+  <text x="735" y="636" text-anchor="middle" class="s">3,148 rows, val loss 3.09 → 1.00</text>
+  <text x="735" y="654" text-anchor="middle" class="s">vision tower: 1,060 image rows</text>
+  <text x="735" y="672" text-anchor="middle" class="s">overfit sanity check first</text>
+
+  <rect x="900" y="550" width="230" height="150" rx="10" class="ai"/>
+  <text x="1015" y="578" text-anchor="middle" class="t">Merge + export</text>
+  <text x="1015" y="600" text-anchor="middle" class="s">merge LoRA + tower</text>
+  <text x="1015" y="618" text-anchor="middle" class="s">RMSNorm −1 un-shift fix</text>
+  <text x="1015" y="636" text-anchor="middle" class="s">GGUF f16 7.85 GB</text>
+  <text x="1015" y="654" text-anchor="middle" class="s">Q4_K_M 2.52 GB</text>
+  <text x="1015" y="672" text-anchor="middle" class="s">mmproj f16 0.63 GB</text>
+
+  <rect x="1170" y="550" width="200" height="150" rx="10" class="ai"/>
+  <text x="1270" y="578" text-anchor="middle" class="t">Serve</text>
+  <text x="1270" y="600" text-anchor="middle" class="s">llama.cpp llama-server</text>
+  <text x="1270" y="618" text-anchor="middle" class="s">127.0.0.1:8080, Metal</text>
+  <text x="1270" y="636" text-anchor="middle" class="s">per-call sampling</text>
+  <text x="1270" y="654" text-anchor="middle" class="s">profiles (tutor/OCR/</text>
+  <text x="1270" y="672" text-anchor="middle" class="s">verify)</text>
+
+  <path d="M280 625 H318" class="e"/>
+  <path d="M570 625 H608" class="e"/>
+  <path d="M860 625 H898" class="e"/>
+  <path d="M1130 625 H1168" class="e"/>
+
+  <!-- legend -->
+  <rect x="30" y="740" width="22" height="16" rx="3" class="py"/><text x="60" y="753" class="s">deterministic Python (decides correctness)</text>
+  <rect x="360" y="740" width="22" height="16" rx="3" class="ai"/><text x="390" y="753" class="s">GEETA 4B model (reads / phrases, never trusted alone)</text>
+  <rect x="740" y="740" width="22" height="16" rx="3" class="st"/><text x="770" y="753" class="s">stored data</text>
+  <line x1="880" y1="748" x2="920" y2="748" class="d"/><text x="930" y="753" class="s">conditional path</text>
+  <text x="30" y="800" class="l">Not deployed (experiments): worksheet LoRA (lower held-out accuracy), story LoRA (TinyStories); WhatsApp delivery is dry-run only; camera focus helper is Phase 2 (ethics-gated).</text>
+</svg>

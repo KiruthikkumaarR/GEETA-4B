@@ -9,15 +9,16 @@
 #   com.geeta.llama    the model server (127.0.0.1:8080)
 #   com.geeta.webapp   the web app (127.0.0.1:8090)
 #   com.geeta.awake    keeps the Mac from idle-sleeping while plugged in
-#   com.geeta.backup   nightly database backup at 02:30
+#   com.geeta.backup   daily database backup (checked hourly, so a night with the Mac off is caught up)
 #   com.geeta.tunnel   the public https address (own domain, or a free trycloudflare.com one)
+#   com.geeta.publink  keeps kiruthikportfolio.com/app pointing at that address (every 2 min)
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 AGENTS="$HOME/Library/LaunchAgents"
 LOGS="$ROOT/logs"
 UID_N="$(id -u)"
-SERVICES=(llama webapp awake backup tunnel nightly)
+SERVICES=(llama webapp awake backup tunnel nightly publink)
 
 mkdir -p "$AGENTS" "$LOGS"
 
@@ -72,7 +73,7 @@ write_agent llama  true "" "$ROOT/deploy/run_llama.sh"
 write_agent webapp true "" "$ROOT/webapp/run_webapp.sh"
 # -i: no idle sleep, -s: no system sleep while on AC power. Display can still sleep.
 write_agent awake  true "" /usr/bin/caffeinate -i -s
-write_agent backup false "  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>2</integer><key>Minute</key><integer>30</integer></dict>
+write_agent backup false "  <key>StartInterval</key><integer>3600</integer>
 " "$ROOT/deploy/backup_db.sh"
 
 # nightly parent + admin emails at email.send_time (config/credentials.local.yaml, default 22:30)
@@ -86,4 +87,6 @@ echo "  (nightly reports at $SEND_TIME)"
 # own domain if setup_tunnel.sh has run, otherwise a free quick-tunnel address
 : > "$LOGS/service_tunnel.log"
 write_agent tunnel true "" "$ROOT/deploy/run_tunnel.sh"
+write_agent publink false "  <key>StartInterval</key><integer>120</integer>
+" "$ROOT/deploy/update_public_link.sh"
 echo "Done. Logs: $LOGS/service_*.log"

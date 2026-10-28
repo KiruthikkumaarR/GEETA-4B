@@ -1,33 +1,36 @@
-# llama.cpp sampling / generation profile for GEETA 4B (served via llama-server + mtmd)
-# Per-purpose profiles - one setting does not fit OCR + tutoring + internal verify.
-# Thinking OFF at the template level (training used enable_thinking=False).
+# llama.cpp sampling for GEETA 4B (served via llama-server + mtmd).
+# DOCUMENTATION ONLY - this file is not loaded at runtime. The values below mirror
+# what the code actually sends (checked against the source 19 Oct 2026):
+#   tools/tutor_engine.ipynb, tools/model_client.ipynb, notebooks/05_e2e_text_loop.ipynb
+# Identical in the final evaluation (M5 13 Oct 2026, test suites 14 Oct 2026) and the live web app.
+# Every request also sends chat_template_kwargs.enable_thinking = false and stream = false.
+# No stop sequences are sent. Unset keys fall back to ModelClient defaults (config/config.yaml
+# "serving": temperature 0.6, top_p 0.9, top_k 40, repeat_penalty 1.1).
 
-baseline:            # ModelClient defaults
-  temperature: 0.6
+tutor_chat:          # kid-facing model replies (fallback path only; Python writes most hints)
+  temperature: 0.4
   top_p: 0.9
-  top_k: 40
-  repeat_penalty: 1.1
-  max_tokens: 512
+  top_k: 40          # ModelClient default
+  repeat_penalty: 1.1 # ModelClient default
+  max_tokens: 90     # 100 for free-chat replies (_model_reply); 90 for hints / wrong-answer clues
 
-tutor_chat:          # kid-facing hints / coaching (tools/tutor_engine.ipynb)
-  temperature: 0.5
+verify:              # internal "work it out" JSON solve, never shown to the child
+  temperature: 0.2   # greedy (0.0) measured worse: 77.91% vs 88.76% - identical retries
   top_p: 0.9
-  top_k: 40
-  repeat_penalty: 1.1
-  max_tokens: 120    # replies are < 50 words; keeps them tight
+  top_k: 40          # ModelClient default
+  repeat_penalty: 1.1 # 1.0 measured worse: 85.14% vs 88.76% (breaks repetition loops)
+  max_tokens: 384
 
 ocr:                 # faithful transcription (ModelClient.ocr_page)
   temperature: 0.1
   top_p: 0.85
   top_k: 20
-  repeat_penalty: 1.0   # real pages legitimately repeat numbers
+  repeat_penalty: 1.0 # real pages legitimately repeat numbers
   max_tokens: 512
 
-verify:              # internal 'work it out' JSON (never shown to the child)
-  temperature: 0.0    # greedy - exact-answer task, keeps the metric reproducible
-  top_p: 0.9
+image_check:         # "is this a real homework question? YES/NO" before OCR
+  temperature: 0.0
+  top_p: 0.8
+  top_k: 10
   repeat_penalty: 1.0
-  max_tokens: 384
-
-stop: ["User:", "System:"]
-# NOTE: no greedy decoding (temp 0) for tutor voice - needs gentle natural variety.
+  max_tokens: 4

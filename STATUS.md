@@ -269,3 +269,44 @@ in one session were recorded as one (reports/progress missed questions).
 2. `05_e2e_text_loop.ipynb` / `06_ocr_loop.ipynb` re-run cleanly end to end now (source-aware done-guards re-execute automatically against real weights; `mark()` is write-once so stale `.done` payloads from old mock runs keep forcing a fresh real run each time — harmless, just means these two always re-run in full rather than skip).
 3. `09_eval_harness.ipynb` uses plain (non-source-aware) done-guards — clear `.A/.B/.C.done` in `outputs/m9/` before re-running if M5/M6 inputs changed.
 4. `10_pilot_prep.ipynb` — clear `.E/.F.done` in `outputs/m10/` to refresh `case_study_writeup.md` from a new scorecard.
+
+## 22 Oct 2026 — division worksheet (tip box + remainders) fix
+Found live (Year 2 "Division Word Problems (with remainders)" page): the numbered "The Steps: 1. Read...
+4. Remember..." tip box was read as questions 1-4, the real questions 1-3 were lost, and the model guessed
+("counting by fours"). Fixed: question runs are ranked by how question-like they are (gaps/?/numbers beat tips
+and worked examples); "Q1." / "Question 1:" markers; "The number sentence:/The answer:" stripped. New exact
+kind `div_rem` (each + left over, judged separately; "eight dollars", "zero/none/nothing", "4 r 6",
+"4 and 6", "6 left over and 4 each"; story numbers like "8 brothers" never count as answers; skip-count hints
+never contain an answer), plus "17 ÷ 5 = ___ r ___". No more "is it right?" wall after a photo: questions are
+listed to pick ("yes" = first; pick by words "the dolls one"; "next one"/"skip"; "what's left"; "you read it
+wrong" -> type it; "explain it simply"; a new typed sum mid-page). Tests: quality PASSED (new page-3 test +
+2,062-question remainder sweep, 18,617 sweep total, 0 given away), security 78/78, features 63/63,
+HTTP end-to-end with the real photo: 0 server errors. Live web app restarted (tunnel URL unchanged).
+- 22 Oct (later): 4 more real pages from the same booklet (p7 division problem solving, p9 symmetry/parallel/
+  segments-angles, p10 times tables + drawing tasks, p11 "(1) 3 x 1 =" numbering) - all 60 questions now read
+  correctly. Added: "(1)" markers; answer lines / kid pencil working after the last "?" dropped (answer
+  choices kept); headings attached to picture questions; PictureTutor (coaches, never marks a picture);
+  drawing tasks; average; calendar sharing (days in a month, 5 school days); remainder-only questions;
+  "x 0" hint. All 7 pages are permanent tests in notebook 13. Quality PASSED, security 78/78, features 63/63.
+
+## 22 Oct 2026 — real child-handwriting labels + honest OCR baseline
+All 107 handwritten pages of the 12 consented worksheets were re-labelled page by page (reference labels;
+independent second check pending) into `data/raw/handwriting_labels/reference_labels.json` (git-ignored; child data).
+The old automatic transcription (`data/processed/real_worksheets/*.jsonl`, field `child_answer`) is UNRELIABLE:
+of 1,443 entries 297 were wrong (often stored the CORRECT answer where the child wrote a wrong one, and
+"fixed" spelling e.g. hexigon->hexagon), 83 answers were missing, and 171 were not the child's writing at all
+(5 printed answer-key pages, circled/highlighted choices). Do not use `child_answer` as ground truth.
+Clean labels: 1,255 (test 300 on the 3 held-out worksheets, train 955).
+Honest baseline (served v1, 3 held-out worksheets, 21 pages, 338 answer lines): 67.5% of the child's answers
+read exactly (vs 99.3% on synthetic font handwriting). Report the 67.5% as the real-handwriting figure.
+Eval script output: data/raw/handwriting_labels/eval_v1_baseline.json. Next: notebook 16 vision v2
+(shapes + handwriting) - only the mmproj changes; serve side by side on :8081; switch only if better.
+
+## 28 Oct 2026 — Vision v2 deployed (M16)
+- Retrained the vision tower only (language model untouched): original 1,060 rows + 3,250 generated shapes + 700 generated pencil worksheets + 72 of the child's training pages ×4 augmentations. 5,586 iterations, 160 min, loss 1.19 → ~0.1. `notebooks/16_vision_v2.ipynb`.
+- v1 vs v2 (held-out, `outputs/m16/compare.json`; 23 held-out child pages, 0 overlap with training):
+  real child handwriting exact 67.5% → **85.8%** (n=338) · generated shapes 29.8% → 60.3% · real shape sides 4/11 → 11/11 ·
+  real shape names 7/10 → 9/10 · booklet photo items 59/60 → 60/60 · synthetic handwriting 99.8% → 99.6% (within tolerance).
+- Gate passed → live server now uses `mmproj-geeta-4b-v2-f16.gguf` (`deploy/run_llama.sh`; old line in `run_llama.sh.v1.bak`).
+- Full suites after the switch: quality PASSED (630 replies 0 hard problems, sweep 18,617 / 0 given away), security 78/78, features 63/63. Live photo smoke test OK.
+- Caveat: reference labels - independent second check pending; all real handwriting is from one child.

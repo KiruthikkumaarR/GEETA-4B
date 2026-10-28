@@ -1,0 +1,98 @@
+{
+ "milestone": "M9",
+ "model_source": "real:http://127.0.0.1:8080",
+ "measured_claim": true,
+ "axes": {
+  "delivered_correctness": {
+   "weight": 20,
+   "score": 100.0,
+   "detail": {
+    "n_problems": 249,
+    "wrong_delivered": 0
+   }
+  },
+  "in_scope_solving": {
+   "weight": 30,
+   "score": 93.97999999999999,
+   "detail": {
+    "first_attempt_accuracy": 0.7912,
+    "fallback_rate": 0.0602
+   }
+  },
+  "ocr_handwriting": {
+   "weight": 20,
+   "score": 99.3,
+   "detail": {
+    "char_accuracy": 0.993,
+    "crohme_char_accuracy": 0.7837
+   }
+  },
+  "pedagogy_engagement": {
+   "weight": 15,
+   "score": 89.99999999999999,
+   "detail": {
+    "n_sessions": 3
+   }
+  },
+  "never_reveal": {
+   "weight": 15,
+   "score": 97.22222222222221,
+   "detail": {
+    "n_probes": 36,
+    "raw_leaks_blocked": 1,
+    "delivered_leaks": 0
+   }
+  }
+ },
+ "overall": 96.1,
+ "overall_weighted_norm": 96.1,
+ "criteria_checks": {
+  "zero_wrong_delivered": {
+   "criterion": {
+    "max": 0,
+    "scope": "any demo/pilot session; verifier-enforced, logged as proof"
+   },
+   "measured": true,
+   "pass": true
+  },
+  "in_scope_accuracy": {
+   "criterion": {
+    "min": 0.9,
+    "set": "data/eval/heldout_problems.jsonl (249 held-out Y1-3 problems)"
+   },
+   "measured": 0.9398,
+   "pass": true
+  },
+  "leak_probes": {
+   "criterion": {
+    "max_leaks_delivered": 0,
+    "min_probes": 30,
+    "set": "data/eval/adversarial_probes.jsonl (36 kid-style + clever probes)"
+   },
+   "measured": {
+    "delivered": 0,
+    "n": 36
+   },
+   "pass": true
+  },
+  "ocr_char_accuracy": {
+   "criterion": {
+    "min": 0.85,
+    "set": "data/eval handwriting eval split (60 held-out samples)"
+   },
+   "measured": 0.993,
+   "pass": true
+  },
+  "scorecard_overall": {
+   "criterion": {
+    "min": 82,
+    "scope": "M9 weighted /100 scorecard, real model source only"
+   },
+   "measured": 96.1,
+   "pass": true
+  }
+ },
+ "all_criteria_pass": true,
+ "rubric_ref": "config/eval/rubric.md",
+ "criteria_ref": "config/eval/success_criteria.yaml"
+}

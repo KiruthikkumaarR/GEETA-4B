@@ -1,0 +1,385 @@
+{
+ "when": "2026-10-14 16:51",
+ "passed": 63,
+ "total": 63,
+ "results": [
+  {
+   "section": "pages",
+   "check": "/login.html opens",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/parent-login.html opens",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/staff-login.html opens",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/kid.html opens",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/privacy.html opens",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/static/app.js served",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/static/portal.js served",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/static/worlds.js served",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/static/kid-world.js served",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/static/worlds.css served",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "/static/kid.js served",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "admin",
+   "check": "admin setup -> admin home",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "admin",
+   "check": "admin adds parent, tutor, child",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "admin",
+   "check": "admin overview counts",
+   "passed": true,
+   "detail": "{'parents': 1, 'tutors': 2, 'kids': 1, 'sessions': 0, 'sessions_7d': 0}"
+  },
+  {
+   "section": "admin",
+   "check": "admin opens admin page",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "admin",
+   "check": "admin resets a password",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "parent",
+   "check": "parent can't use the staff sign-in",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "parent",
+   "check": "parent signs in -> parent home",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "parent",
+   "check": "parent sees their child",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "parent",
+   "check": "parent picks avatar + world",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "parent",
+   "check": "parent sets PIN",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "parent",
+   "check": "daily email is on by default",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "tutor",
+   "check": "tutor signs in -> tutor home",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "tutor",
+   "check": "tutor sees their student",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "parent switches on kid sign-in for the device",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid roster shows picture, never the PIN hash",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "wrong PIN refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "right PIN signs the kid in",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid session uses their world buddy (Zoom)",
+   "passed": true,
+   "detail": "{'id': 1, 'nickname': 'Mia', 'avatar': '🦊', 'world': 'car'}"
+  },
+  {
+   "section": "kid",
+   "check": "kid gets a friendly hello",
+   "passed": true,
+   "detail": "Hey Mia! 😊 Ready for some maths fun? Show me your homew"
+  },
+  {
+   "section": "kid",
+   "check": "tutoring: exact first step",
+   "passed": true,
+   "detail": "Let's do this one together! Let's add the tens first. What's 27 + 10?"
+  },
+  {
+   "section": "kid",
+   "check": "tutoring: wrong answer explained kindly",
+   "passed": true,
+   "detail": "Not quite - but good try! Let's add the tens first. What's 27 + 10?"
+  },
+  {
+   "section": "kid",
+   "check": "tutoring: no spoilers",
+   "passed": true,
+   "detail": "I could... but then YOU wouldn't get the fun of cracking it! Here's a "
+  },
+  {
+   "section": "kid",
+   "check": "tutoring: right answer celebrated",
+   "passed": true,
+   "detail": "That's right - high five! ✋ 42 is the answer - and YOU worked it out! "
+  },
+  {
+   "section": "kid",
+   "check": "kid's 'I'm done' saves without showing the report",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid can change world",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid signs out",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "worksheet-by-text",
+   "check": "measurement: added-instead-of-took-away spotted",
+   "passed": true,
+   "detail": "Ooh, I think you added. This one is TAKING AWAY - so the answer is sma"
+  },
+  {
+   "section": "worksheet-by-text",
+   "check": "measurement: answer with units",
+   "passed": true,
+   "detail": "That's right - high five! ✋ 18 cm is the answer - and YOU worked it ou"
+  },
+  {
+   "section": "worksheet-by-text",
+   "check": "money change: counts up from the cost",
+   "passed": true,
+   "detail": "Let's do this one together! Shopkeepers count UP to work out change! S"
+  },
+  {
+   "section": "worksheet-by-text",
+   "check": "money change: 50c accepted",
+   "passed": true,
+   "detail": "Yesss, nailed it! 🌟 50c is the answer - and YOU worked it out! Want to"
+  },
+  {
+   "section": "worksheet-by-text",
+   "check": "shapes: square explained, triangle accepted",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "worksheet-by-text",
+   "check": "parent gets a session PDF",
+   "passed": true,
+   "detail": "21431 bytes"
+  },
+  {
+   "section": "progress",
+   "check": "progress lists sessions with PDFs",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "progress",
+   "check": "progress lists skills",
+   "passed": true,
+   "detail": "['Measurement', 'Money', 'Shapes', 'Adding']"
+  },
+  {
+   "section": "pilot",
+   "check": "tutor opens printable check (12 items)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "admin downloads de-identified CSV with the gain",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "email status shows outbox mode until set up",
+   "passed": true,
+   "detail": "{'ready': False, 'enabled': False, 'smtp_host': 'smtp.gmail.com', 'from_address': '', 'password_set': False, 'send_time': '22:30', 'admin_recipients': [], 'sett"
+  },
+  {
+   "section": "email",
+   "check": "test email goes to admin (or test outbox)",
+   "passed": true,
+   "detail": "{'status': 'outbox', 'path': '/var/folders/9r/lxfmml9d3cz0_d_w1v06_8sw0000gn/T/geeta_test_jbtehxy4/outbox/20261014-165145-433431_admin_test_local.eml'}"
+  },
+  {
+   "section": "email",
+   "check": "tonight's preview: one parent email for Mia",
+   "passed": true,
+   "detail": "[{'kid': 'Mia', 'to': 'mum@test.local', 'status': 'outbox', 'path': '/var/folders/9r/lxfmml9d3cz0_d_w1v06_8sw0000gn/T/geeta_test_jbtehxy4/outbox/20261014-1"
+  },
+  {
+   "section": "email",
+   "check": "tonight's preview: technical email for the admin",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "parent email has the daily PDF attached",
+   "passed": true,
+   "detail": "['daily_20261014.pdf']"
+  },
+  {
+   "section": "email",
+   "check": "parent email body names the child and count",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "technical email has no child names",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "parent's 'off' switch stops their email",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "section": "account",
+   "check": "wrong current password refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "account",
+   "check": "parent changes password",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "account",
+   "check": "old password no longer works",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "account",
+   "check": "sign out works",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "delete",
+   "check": "parent deletes the child and everything kept",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "delete",
+   "check": "child's reports folder is gone",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "delete",
+   "check": "child's sessions are gone",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "server",
+   "check": "no server errors during the walkthrough",
+   "passed": true,
+   "detail": "0 tracebacks"
+  }
+ ]
+}

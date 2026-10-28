@@ -1,0 +1,475 @@
+{
+ "when": "2026-10-14 16:51",
+ "passed": 78,
+ "total": 78,
+ "results": [
+  {
+   "section": "setup",
+   "check": "first admin can be created on this computer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "signed-out visitor sent to sign-in",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "admin page needs admin",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "second admin can't be created",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pages",
+   "check": "setup refused through a tunnel",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "cross-site",
+   "check": "foreign website can't act as a parent",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "cross-site",
+   "check": "plain-text form post refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "cross-site",
+   "check": "cross-site request without Origin refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "cross-site",
+   "check": "(control) GEETA's own page still works",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "injection",
+   "check": "markup in a child's name can't break or inject into the PDF",
+   "passed": true,
+   "detail": "20137 bytes"
+  },
+  {
+   "section": "injection",
+   "check": "child's name can't write files outside the reports folder",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "size+flood",
+   "check": "1 MB chat message refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "size+flood",
+   "check": "2 MB password refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "size+flood",
+   "check": "900-megapixel decompression-bomb image refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "size+flood",
+   "check": "non-image file refused as a photo",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "size+flood",
+   "check": "200 MB upload refused before reading it",
+   "passed": true,
+   "detail": "HTTP/1.1 413 Content Too Large"
+  },
+  {
+   "section": "size+flood",
+   "check": "session flood limited",
+   "passed": true,
+   "detail": "7 allowed"
+  },
+  {
+   "section": "size+flood",
+   "check": "message flood limited (20 a minute)",
+   "passed": true,
+   "detail": "20 accepted"
+  },
+  {
+   "section": "guessing",
+   "check": "password guessing from rotating IPs is locked out",
+   "passed": true,
+   "detail": "10 guesses, 15 blocked"
+  },
+  {
+   "section": "guessing",
+   "check": "PIN guessing from rotating IPs is locked out",
+   "passed": true,
+   "detail": "10 guesses, 5 blocked"
+  },
+  {
+   "section": "guessing",
+   "check": "easy PIN refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "other parent can't see the child",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "other parent can't start a session for the child",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "other parent can't change the child's PIN",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "other parent can't delete the child",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "parent can't use admin APIs",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "parent can't relink a child",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "tutor can't attach a child to someone's account",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "access",
+   "check": "nobody else can use a live session",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "(control) kid signs in with picture + PIN",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid sign-in signs the grown-up out on that device",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid can't open grown-up pages",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid can't read reports",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "kid",
+   "check": "kid can't reach pilot or admin email APIs",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /geeta_server.ipynb blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /run_webapp.sh blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /static/../geeta_server.ipynb blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /static/%2e%2e/geeta_server.ipynb blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /static/..%2fgeeta_server.ipynb blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /docs blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /openapi.json blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /static/../../config/credentials.local.yaml blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "files",
+   "check": "GET /static/../../data/portal/geeta_portal.db blocked",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "headers",
+   "check": "sign-in cookie is Secure + HttpOnly + SameSite over https",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "headers",
+   "check": "header content-security-policy",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "headers",
+   "check": "header x-frame-options",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "headers",
+   "check": "header x-content-type-options",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "headers",
+   "check": "header strict-transport-security",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "headers",
+   "check": "header referrer-policy",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "headers",
+   "check": "header cross-origin-opener-policy",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "2-step",
+   "check": "(control) 2-step can be switched on",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "2-step",
+   "check": "password alone isn't enough when 2-step is on",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "2-step",
+   "check": "made-up pending token refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "2-step",
+   "check": "(control) recovery code works",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "2-step",
+   "check": "recovery code works only once",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "2-step",
+   "check": "used pending token can't be reused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "2-step",
+   "check": "2-step code guessing locked out",
+   "passed": true,
+   "detail": "[401, 401, 401, 401, 429, 429, 429, 429]"
+  },
+  {
+   "section": "pilot",
+   "check": "parent can't read the answer key",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "parent can't open the printable check",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "parent can't enter scores",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "parent can't set a study code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "parent can't download research data",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "other tutor can't score someone else's student",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "non-admin tutor can't download research data",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "signed-out visitor can't read the answer key",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "bad study code refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "impossible score refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "unknown phase refused",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "research export has no names or emails",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "pilot",
+   "check": "research export gain is right (5/12 -> 8/12 = +25.0)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "parent can't see email settings",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "parent can't send test emails",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "tutor can't trigger tonight's emails",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "email status never shows the password",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "email",
+   "check": "test email limited (3 per 10 min)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "logs",
+   "check": "security log records failures, lock-outs and blocked sites",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "logs",
+   "check": "security log holds no passwords or codes",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "section": "server",
+   "check": "no server crashes during the attacks",
+   "passed": true,
+   "detail": "0 tracebacks"
+  }
+ ]
+}

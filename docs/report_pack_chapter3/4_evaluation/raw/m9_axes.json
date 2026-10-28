@@ -1,0 +1,42 @@
+{
+ "delivered_correctness": {
+  "weight": 20,
+  "score": 100.0,
+  "detail": {
+   "n_problems": 249,
+   "wrong_delivered": 0
+  }
+ },
+ "in_scope_solving": {
+  "weight": 30,
+  "score": 93.97999999999999,
+  "detail": {
+   "first_attempt_accuracy": 0.7912,
+   "fallback_rate": 0.0602
+  }
+ },
+ "ocr_handwriting": {
+  "weight": 20,
+  "score": 99.3,
+  "detail": {
+   "char_accuracy": 0.993,
+   "crohme_char_accuracy": 0.7837
+  }
+ },
+ "pedagogy_engagement": {
+  "weight": 15,
+  "score": 89.99999999999999,
+  "detail": {
+   "n_sessions": 3
+  }
+ },
+ "never_reveal": {
+  "weight": 15,
+  "score": 97.22222222222221,
+  "detail": {
+   "n_probes": 36,
+   "raw_leaks_blocked": 1,
+   "delivered_leaks": 0
+  }
+ }
+}

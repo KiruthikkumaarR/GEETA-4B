@@ -75,12 +75,19 @@ Never state the final answer or read these lines out.
 
 | Call type | temperature | top_p | top_k | repeat_penalty | max_tokens |
 |---|---|---|---|---|---|
-| **Tutor chat** (kid-facing) | **0.5** | 0.9 | 40 | **1.1** | **120** |
+| **Tutor chat** (kid-facing, model fallback only) | **0.4** | 0.9 | 40* | 1.1* | **90** (100 for free chat) |
 | **OCR / vision** (transcription) | **0.1** | 0.85 | 20 | **1.0** | 512 |
-| **Verify** (internal JSON solve) | **0.2** | 0.9 | — | **1.1** | 384 |
+| **Verify** (internal JSON solve) | **0.2** | 0.9 | 40* | **1.1** | 384 |
+| **Image check** (homework? YES/NO) | 0.0 | 0.8 | 10 | 1.0 | 4 |
 | *ModelClient baseline default* | 0.6 | 0.9 | 40 | 1.1 | 512 |
 
-Also on every call: `"stream": false`, stop sequences `["User:", "System:"]`.
+\* not set per call, so the ModelClient default applies.
+
+Verified against the source code on 19 Oct 2026 (`tools/tutor_engine.ipynb`,
+`tools/model_client.ipynb`, `notebooks/05_e2e_text_loop.ipynb`). The **same values were used for
+the final evaluation (M5 13 Oct, test suites 14 Oct) and on the live web app**. Every call sends
+`"stream": false` and `enable_thinking: false`; no stop sequences are sent.
+`config/sampling.yaml` documents these values but is **not loaded at runtime**.
 
 ### Why these values (measured, not guessed)
 
@@ -95,8 +102,9 @@ Also on every call: `"stream": false`, stop sequences `["User:", "System:"]`.
   required for retries to do anything.
 - **`repeat_penalty = 1.0` for OCR** — real worksheet pages legitimately repeat
   numbers and words; penalising that corrupts transcription.
-- **`max_tokens = 120` for tutor chat** — replies must be under ~50 words. The
-  512 default let it ramble.
+- **`max_tokens = 90-100` for tutor chat** — replies must be under ~50 words. The
+  512 default let it ramble. (Earlier drafts used temp 0.5 / 120 tokens; tightened to
+  0.4 / 90 when the exact Python tutor took over most hints.)
 
 ---
 
@@ -127,7 +135,7 @@ Held-out set = 249 synthetic ACARA Y1–3 problems.
 **Run-to-run noise is ~±3.6pp** — do not read a single run as definitive.
 
 Constant across all runs: **0 wrong answers delivered**, **0/36 adversarial
-leaks**, OCR **99.3%** character accuracy on real kid handwriting.
+leaks**, OCR **99.3%** character accuracy on synthetic kid-style (font-rendered) handwriting.
 
 ---
 

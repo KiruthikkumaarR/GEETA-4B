@@ -1,0 +1,18 @@
+# Run-to-run noise on the model path is about +/-3.6 percentage points (SERVING_CONFIG.md).
+metric,configuration,value,test_set,source
+M5 in-scope accuracy,first real run on served weights (session 12),44.18%,249 held-out,STATUS.md session 12
+M5 in-scope accuracy,"+ separate internal WORK_SYSTEM prompt, verifier retry fix",55.82%,249 held-out,STATUS.md session 12
+M5 in-scope accuracy,"+ verifier skips narrative steps, word-number + time formatting fixes",82.33%,249 held-out,STATUS.md session 13
+M5 in-scope accuracy,"+ per-call sampling profiles (verify temp 0.2, repeat_penalty 1.1)",88.76%,249 held-out,SERVING_CONFIG.md s5
+M5 in-scope accuracy,ablation: verify repeat_penalty 1.0,85.14%,249 held-out,SERVING_CONFIG.md s5
+M5 in-scope accuracy,ablation: verify greedy (temp 0.0),77.91%,249 held-out,SERVING_CONFIG.md s5
+M5 in-scope accuracy,FINAL: + Python exact tutor (150/249) + 50 bank-answer fixes,93.98%,249 held-out,outputs/m5/zero_wrong_report.json
+M5 model-path accuracy,"FINAL, the 81 problems Python could not read (model + verifier)",81.48%,81 of 249,outputs/m5/zero_wrong_report.json
+M9 scorecard /100,session 12,83.9,5 axes,STATUS.md
+M9 scorecard /100,session 13,93.1,5 axes,STATUS.md
+M9 scorecard /100,FINAL,96.1,5 axes,outputs/m9/scorecard.json
+Real-worksheet accuracy,served GGUF (text LoRA + vision) + exact solver,87.43%,191 real held-out Qs,outputs/m5/real_worksheet_eval.json
+Real-worksheet accuracy,text LoRA via MLX (no GGUF),84.82%,191 real held-out Qs,real_worksheet_eval_OLDadapter_mlx.json
+Real-worksheet accuracy,worksheet LoRA via MLX (experimental),81.15%,191 real held-out Qs,real_worksheet_eval_newadapter.json
+OCR char accuracy,"served GEETA, synthetic kid-style handwriting",99.3%,60 held-out,outputs/m6/handwriting_eval.json
+OCR char accuracy,"served GEETA, CROHME expressions",78.37%,200 held-out,outputs/m6/crohme_eval.json

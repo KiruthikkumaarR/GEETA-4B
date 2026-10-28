@@ -1,0 +1,40 @@
+{
+ "when": "2026-10-14 16:49",
+ "maths": {
+  "dev": {
+   "conversations": 40,
+   "replies": 240,
+   "hard_problems": 0,
+   "exact_python": 40,
+   "by_type": {
+    "NUMBER": 32
+   }
+  },
+  "heldout": {
+   "conversations": 40,
+   "replies": 240,
+   "hard_problems": 0,
+   "exact_python": 39,
+   "by_type": {
+    "NUMBER": 36
+   }
+  },
+  "measure": {
+   "conversations": 25,
+   "replies": 150,
+   "hard_problems": 0,
+   "exact_python": 24,
+   "by_type": {
+    "NUMBER": 20
+   }
+  }
+ },
+ "chat_issues": 0,
+ "worksheet_failures": [],
+ "bank_read": 655,
+ "bank_disagreements": 0,
+ "sweep_questions": 16555,
+ "sweep_answer_given_away": 0,
+ "sweep_plan_mismatch": 0,
+ "passed": true
+}

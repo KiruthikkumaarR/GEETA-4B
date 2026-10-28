@@ -1,0 +1,62 @@
+# OCR on 60 SYNTHETIC kid-style handwriting images (font-rendered with jitter), held out. char_acc = 1 - normalised edit distance.
+image,gt,pred_head,char_acc,seconds
+data/eval/handwriting_synth/hw_0001.png,Round 34 to the nearest 100,Round 34 to the nearest 100,1.0,0.3
+data/eval/handwriting_synth/hw_0003.png,Which number is bigger: 80 or 20,Which number is bigger: 80 or 20,1.0,0.4
+data/eval/handwriting_synth/hw_0005.png,Which number is bigger: 45 or 68,Which number is bigger: 45 or 68,1.0,0.4
+data/eval/handwriting_synth/hw_0007.png,Round 23 to the nearest 100,Round 23 to the nearest 100,1.0,0.4
+data/eval/handwriting_synth/hw_0009.png,Which number is bigger: 97 or 72,Which number is bigger: 97 or 72,1.0,0.4
+data/eval/handwriting_synth/hw_0011.png,Round 74 to the nearest 100,Round 74 to the nearest 100,1.0,0.4
+data/eval/handwriting_synth/hw_0013.png,"Put 55 and 59 in order, smallest first","Put 55 and 59 in order , smallest first",1.0,0.4
+data/eval/handwriting_synth/hw_0015.png,"Put 50 and 66 in order, smallest first","Put 50 and 66 in order, smallest first",1.0,0.4
+data/eval/handwriting_synth/hw_0017.png,Round 29 to the nearest 100,Round 29 to the nearest 100,1.0,0.4
+data/eval/handwriting_synth/hw_0019.png,"Put 68 and 28 in order, smallest first","Put 68 and 28 in order, smallest first",1.0,0.5
+data/eval/handwriting_synth/hw_0021.png,Which number is bigger: 56 or 26,Which number is bigger: 5 6 or 2 6,1.0,0.5
+data/eval/handwriting_synth/hw_0023.png,Round 54 to the nearest 10,Round 54 to the nearest 10,1.0,0.3
+data/eval/handwriting_synth/hw_0025.png,Round 70 to the nearest 100,Round 70 to the nearest 100,1.0,0.4
+data/eval/handwriting_synth/hw_0027.png,Round 72 to the nearest 10,Round 7 2 t o t h e w e a r e s t 1 0,0.9524,0.5
+data/eval/handwriting_synth/hw_0029.png,Which number is bigger: 58 or 35,"Which number is bigger, 58 or 35",1.0,0.4
+data/eval/handwriting_synth/hw_0031.png,"Put 78 and 92 in order, smallest first","Put 78 and 92 in order, smallest first",1.0,0.4
+data/eval/handwriting_synth/hw_0033.png,Round 81 to the nearest 100,Round 81 to the nearest 100,1.0,0.4
+data/eval/handwriting_synth/hw_0035.png,What number is 7 tens and 7 ones,What number is 7 tens and 7 ones,1.0,0.4
+data/eval/handwriting_synth/hw_0037.png,What number is 5 tens and 4 ones,What number is 5 tens and 4 ones,1.0,0.3
+data/eval/handwriting_synth/hw_0039.png,What number is 20 more than 12,What number is 20 more than 12,1.0,0.4
+data/eval/handwriting_synth/hw_0041.png,What number is 20 more than 32,What number is 20 more than 32,1.0,0.4
+data/eval/handwriting_synth/hw_0043.png,What number is 50 more than 47,What number is 50 more than 47,1.0,0.4
+data/eval/handwriting_synth/hw_0045.png,What number is 30 more than 47,What number is 30 more than 47,1.0,0.4
+data/eval/handwriting_synth/hw_0047.png,What number is 20 less than 67,What number is 20 less than 67,1.0,0.4
+data/eval/handwriting_synth/hw_0049.png,What number is 20 less than 51,What number is 20 less than 51,1.0,0.4
+data/eval/handwriting_synth/hw_0051.png,What number is 1 tens and 7 ones,What number is 1 tens and 7 ones,1.0,0.4
+data/eval/handwriting_synth/hw_0053.png,What number is 20 less than 71,What number is 20 less than 71,1.0,0.4
+data/eval/handwriting_synth/hw_0055.png,What number is 10 more than 11,What number is 10 more than 11,1.0,0.4
+data/eval/handwriting_synth/hw_0057.png,What number is 30 more than 32,What number is 30 more than 32,1.0,0.4
+data/eval/handwriting_synth/hw_0059.png,What number is 40 more than 29,What number is 40 more than 29,1.0,0.4
+data/eval/handwriting_synth/hw_0061.png,What number is 20 more than 22,What number is 20 more than 22,1.0,0.4
+data/eval/handwriting_synth/hw_0063.png,What number is 3 tens and 7 ones,What number is 3 tens and 7 ones,1.0,0.4
+data/eval/handwriting_synth/hw_0065.png,What number is 50 less than 90,What number is 50 less than 90,1.0,0.4
+data/eval/handwriting_synth/hw_0067.png,What number is 50 more than 33,What number is 50 more than 33,1.0,0.4
+data/eval/handwriting_synth/hw_0069.png,Count by 5s starting at 6 The pattern is,Count by 5s starting at 6 The pattern is,1.0,0.5
+data/eval/handwriting_synth/hw_0071.png,Count by 2s starting at 12 The pattern i,Count by 2s starting at 12 The pattern i,1.0,0.4
+data/eval/handwriting_synth/hw_0073.png,Count by 2s starting at 4 The pattern is,Count by 2s starting at 4 . The pattern is,1.0,0.4
+data/eval/handwriting_synth/hw_0075.png,Count by 5s starting at 21 The pattern i,Count by 5s starting at 21 The pattern is,0.9688,0.5
+data/eval/handwriting_synth/hw_0077.png,Count by 10s starting at 24 The pattern ,Count by 10s starting at 24 The pattern,1.0,0.5
+data/eval/handwriting_synth/hw_0079.png,Count by 2s starting at 33 The pattern i,Count by 2s starting at 33 The pattern i,1.0,0.5
+data/eval/handwriting_synth/hw_0081.png,Count by 5s starting at 29 The pattern i,Count by 5s starting at 29 The pattern i,1.0,0.5
+data/eval/handwriting_synth/hw_0083.png,Count by 10s starting at 25 The pattern ,Count by 10s starting at 25 The pattern,1.0,0.4
+data/eval/handwriting_synth/hw_0085.png,Count by 10s starting at 17 The pattern ,Count by 10s starting at 17 The pattem,0.9375,0.5
+data/eval/handwriting_synth/hw_0087.png,Count by 5s starting at 36 The pattern i,Count by 5s starting at 36 The pattern i,1.0,0.4
+data/eval/handwriting_synth/hw_0089.png,Count by 2s starting at 25 The pattern i,Count by 2s starting at 25 The pattern i,1.0,0.5
+data/eval/handwriting_synth/hw_0091.png,Count by 10s starting at 2 The pattern i,Count by 10s starting at 2 The pattern i,1.0,0.5
+data/eval/handwriting_synth/hw_0093.png,Count by 2s starting at 29 The pattern i,Count by 2 s starting at 29 .The pattern i,1.0,0.5
+data/eval/handwriting_synth/hw_0095.png,Count by 10s starting at 12 The pattern ,Count by 10s starting at 12 The pattern,1.0,0.4
+data/eval/handwriting_synth/hw_0097.png,Count by 2s starting at 11 The pattern i,Count by 2s starting at 1. The pattern i,0.9688,0.5
+data/eval/handwriting_synth/hw_0099.png,Count by 2s starting at 9 The pattern is,Count by 2s starting at 9 The pattern is,1.0,0.4
+data/eval/handwriting_synth/hw_0101.png,Count by 10s starting at 15 The pattern ,Count by 10s starting at 15 . The pattern,1.0,0.5
+data/eval/handwriting_synth/hw_0103.png,Count by 5s starting at 25 The pattern i,Count by 5s starting at 25 The pattern i,1.0,0.5
+data/eval/handwriting_synth/hw_0105.png,Count by 10s starting at 4 The pattern i,Count by 10s starting at 4 The pattern i,1.0,0.5
+data/eval/handwriting_synth/hw_0107.png,Count by 2s starting at 23 The pattern i,Count by 2s starting at 23. What is the pattern?,0.7812,0.5
+data/eval/handwriting_synth/hw_0109.png,What is 5 minus 2,What is 5 minus 2,1.0,0.3
+data/eval/handwriting_synth/hw_0111.png,You have 20 robots You give away 2 more ,You have 20 robots You give away 2 more,1.0,0.4
+data/eval/handwriting_synth/hw_0113.png,There are 9 lollies in a box Someone tak,There are 9 lollies in a box Someone take,0.9688,0.4
+data/eval/handwriting_synth/hw_0115.png,There are 6 eggs in a box Someone takes ,There are 6 eggs in a box Someone takes,1.0,0.4
+data/eval/handwriting_synth/hw_0117.png,What is 7 minus 6,What is 7 minus 6,1.0,0.3
+data/eval/handwriting_synth/hw_0119.png,Find: 22 - 3,Find: 2 2 - 3,1.0,0.3

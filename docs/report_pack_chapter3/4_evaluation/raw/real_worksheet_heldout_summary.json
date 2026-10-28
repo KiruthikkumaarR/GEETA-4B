@@ -1,0 +1,24 @@
+{
+ "note": "3 held-out real Year-2 worksheets (191 questions). Aggregates only - row-level data comes from consented child work and is not shared.",
+ "served_gguf_pipeline": {
+  "n": 191,
+  "correct": 167,
+  "accuracy": 0.8743455497382199,
+  "deterministic": 134,
+  "wrong_delivered": 0
+ },
+ "text_lora_mlx": {
+  "n": 191,
+  "correct": 162,
+  "accuracy": 0.8481675392670157,
+  "deterministic": 134,
+  "adapter": "outputs/m4/text_lora"
+ },
+ "worksheet_lora_mlx": {
+  "n": 191,
+  "correct": 155,
+  "accuracy": 0.8115183246073299,
+  "deterministic": 134,
+  "adapter": "outputs/m4/worksheet_lora"
+ }
+}

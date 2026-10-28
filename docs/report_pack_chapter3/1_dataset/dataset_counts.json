@@ -1,0 +1,78 @@
+{
+ "acara_problem_bank_total": 1090,
+ "train_tutor_dialogues (data/splits/train.jsonl)": {
+  "total": 706,
+  "bank_tutor": 400,
+  "refusal_never_reveal": 150,
+  "reengagement_pedagogy": 100,
+  "gsm8k_easy_reasoning": 40,
+  "synthetic_homework_tutor": 10,
+  "hand_written_exemplars": 6
+ },
+ "lora_rows_after_per_turn_expansion (deployed text LoRA)": {
+  "train": 3148,
+  "validation": 80
+ },
+ "train_vision (data/splits/train_vision.jsonl)": {
+  "total": 1060,
+  "crohme": 1000,
+  "synthetic_kid_style_handwriting": 60
+ },
+ "heldout_problems (never trained on)": 249,
+ "adversarial_leak_probes": 36,
+ "ocr_eval_synthetic_handwriting": 60,
+ "ocr_eval_crohme_heldout": 200,
+ "real_year2_worksheets": {
+  "worksheets": 12,
+  "questions_transcribed": 1884,
+  "heldout_worksheets": 3,
+  "heldout_questions": 191,
+  "note": "consented; used only for an experimental adapter + evaluation; raw pages and answers are NOT shared"
+ },
+ "worksheet_lora_experiment (not deployed)": {
+  "dialogues": 1108,
+  "train_rows": 4317,
+  "validation_rows": 117
+ },
+ "story_lora_experiment (not deployed)": {
+  "train": 19065,
+  "validation": 100,
+  "source": "TinyStories ~1%"
+ },
+ "scripted_test_conversations": {
+  "dev": 40,
+  "heldout": 40,
+  "measurement_money": 25
+ },
+ "split_lock_sha256": {
+  "generated": "2026-08-20",
+  "train.jsonl": {
+   "sha256": "b515d5bbbc5586580410e0bf9348a612a93f8c045ae15a32c2111486b9a51428",
+   "examples": 706
+  },
+  "train_vision.jsonl": {
+   "sha256": "66e830cd65ed870ba0c3708219ef27de56b84ff66beba4019a6addd4fba3628a",
+   "examples": 1060
+  },
+  "heldout_problems.jsonl": {
+   "sha256": "09f9c84f2fd9eb5ffe91f762a9437a9574236f5fbd928790671fa82da11749a7",
+   "examples": 249
+  },
+  "adversarial_probes.jsonl": {
+   "sha256": "98af7cbcfd77d7889277ab574ee1b2f073f298265f0351c06ccea03091df57b3",
+   "examples": 36
+  },
+  "handwriting": {
+   "train_synth": 60,
+   "eval_synth": 60,
+   "crohme_train": 1000,
+   "crohme_eval": 200
+  },
+  "policy": "held-out set is disjoint from training (stratified bank split); never fine-tune on it",
+  "crohme_heldout.jsonl": {
+   "sha256": "7fc0d55a275003fdc6d0c116f916abca436ca3855c760a28d82cd47b719d8412",
+   "examples": 200
+  },
+  "note": "vision set expanded 2026-08-31: +1000 CROHME handwritten-math images (Neeze/CROHME-full, 2014/2016/2019 linearized labels, downscaled 1366x768->640x360, seed42); 200 CROHME held out for M6 OCR benchmark; synth 60/60 split unchanged"
+ }
+}
