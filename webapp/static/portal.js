@@ -455,69 +455,11 @@
     }).catch(function (x) { document.getElementById("twostep-err").textContent = x.message; });
   });
 
-  // ------------------------------------------------------------------ daily email switch
-  function paintEmail() {
-    var on = !!(me && me.email_reports);
-    var st = document.getElementById("email-state");
-    if (!st) return;
-    st.textContent = on ? "on" : "off"; st.className = "pill " + (on ? "on" : "off");
-    document.getElementById("btn-email").textContent = on ? "Turn off" : "Turn on";
-    document.getElementById("email-box").hidden = me.role !== "parent" && !me.is_admin;
-  }
-  var emailBtn = document.getElementById("btn-email");
-  if (emailBtn) emailBtn.addEventListener("click", function () {
-    api("PATCH", "/api/auth/prefs", { email_reports: !me.email_reports })
-      .then(function (r) { me.email_reports = r.user.email_reports; paintEmail(); })
-      .catch(function (x) { window.alert(x.message); });
-  });
-
-  // ------------------------------------------------------------------ admin: email reports
-  function loadMail() {
-    var box = document.getElementById("mail-box");
-    if (!box) return;
-    api("GET", "/api/admin/email").then(function (r) {
-      var m = r.mail, st = document.getElementById("mail-status");
-      st.textContent = m.ready
-        ? "Sending is ON from " + m.from_address + " every night at " + m.send_time + "."
-        : "Sending is NOT set up yet - emails are saved to the outbox folder instead. To turn it on, fill in " +
-          m.settings_file + " on the GEETA computer (" + (m.password_set ? "password set" : "no password yet") +
-          "), set enabled: true, then restart the services.";
-      var t = document.getElementById("mail-recent");
-      t.textContent = "";
-      t.appendChild(el("tr", {}, ["When", "Report", "Child", "To", "Result"].map(function (h) { return el("th", { text: h }); })));
-      r.recent.forEach(function (x) {
-        t.appendChild(el("tr", {}, [el("td", { text: when(x.sent_ts) }),
-          el("td", { text: x.kind === "admin_daily" ? "Technical" : "Daily (parent)" }),
-          el("td", { text: x.kid || "-" }), el("td", { text: x.to_email || (x.kind === "admin_daily" ? "admins" : "-") }),
-          el("td", { class: /failed/.test(x.status || "") ? "ev-bad" : "", text: x.status || "" })]));
-      });
-      if (!r.recent.length) t.appendChild(el("tr", {}, [el("td", { text: "No reports sent yet." })]));
-    }).catch(function () {});
-  }
-  var mt = document.getElementById("btn-mail-test");
-  if (mt) mt.addEventListener("click", function () {
-    var msg = document.getElementById("mail-msg"); msg.textContent = "Sending…";
-    api("POST", "/api/admin/email/test").then(function (r) {
-      msg.textContent = r.status === "sent" ? "Sent - check your inbox." :
-        r.status === "outbox" ? "Saved to the outbox (sending isn't set up yet): " + r.path :
-        "Couldn't send: " + (r.error || "unknown error");
-    }).catch(function (x) { msg.textContent = x.message; });
-  });
-  var mp = document.getElementById("btn-mail-preview");
-  if (mp) mp.addEventListener("click", function () {
-    var msg = document.getElementById("mail-msg"); msg.textContent = "Building tonight's emails…";
-    api("POST", "/api/admin/reports/preview").then(function (r) {
-      msg.textContent = r.parents.length + " parent email(s) and " + r.admin.length +
-        " technical email(s) built into the outbox folder (nothing was sent).";
-    }).catch(function (x) { msg.textContent = x.message; });
-  });
-
   // ------------------------------------------------------------------ boot
   api("GET", "/api/auth/me").then(function (r) {
     me = r.user;
     if (r.home && r.home.indexOf(page) === -1) { window.location.replace(r.home); throw new Error("wrong page"); }
-    deviceOn = !!r.kid_device; paintDevice(); paintTwoStep(); paintEmail();
-    if (me.is_admin) loadMail();
+    deviceOn = !!r.kid_device; paintDevice(); paintTwoStep();
     document.getElementById("whoami").textContent =
       "Signed in as " + me.name + " · " + (me.role === "parent" ? "Parent" : (me.is_admin ? "Tutor (admin)" : "Tutor"));
     if (me.is_admin) return loadAdmin();

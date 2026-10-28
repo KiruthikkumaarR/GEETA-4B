@@ -131,7 +131,7 @@ was measured after training on the held-out sets (section 4).*
 | Six kid "worlds" with buddies (teddy, car, space, dino, unicorn, ocean) | ✅ Implemented |
 | Parent / tutor / admin / kid sign-in, per-child progress, learning memory | ✅ Implemented |
 | Parent PDF report per session | ✅ Implemented |
-| Nightly parent + admin emails | ➖ Built and tested, then switched off: parents and staff view progress and PDF reports in the app instead |
+| Nightly parent + admin emails | ➖ Removed: parents and staff view progress and PDF reports in the app instead |
 | WhatsApp delivery | ⚠️ Dry-run only (message payload generated, not sent) |
 | Security (argon2, TOTP 2-step, CSRF, CSP, rate limits, security log) | ✅ Implemented, 78/78 attack tests blocked |
 | Camera "focus helper" (in-browser MediaPipe) | ⚠️ Implemented, off by default; not validated on a real webcam; Phase 2, needs ethics approval |
@@ -182,7 +182,7 @@ was measured after training on the held-out sets (section 4).*
 Additional results: exact Python path 150/150 correct with 0 disagreements; model path 81.48% on the 81 problems Python could
 not read; CROHME OCR 78.4% (reported, not a gate); real-worksheet held-out accuracy 87.4% with 0 wrong delivered;
 hallucination suite **0 hard failures in 630 replies** (soft NUMBER flags: 32 / 36 / 20, reviewed); bank read-back 655/1,090
-with 0 disagreements; 16,555-question sweep with 0 answers given away; security 78/78; features 63/63.
+with 0 disagreements; 16,555-question sweep with 0 answers given away; security 78/78; features 63/63 (later 74/74 and 58/58 after the email feature was removed).
 
 **Response times** (16 Oct 2026, M4 Max, synthetic inputs, one request at a time): exact Python tutor reply < 0.02 s;
 model-written hint median 0.28 s (mean 0.49 s, max 2.56 s on the cold first call); OCR of a handwriting line median 0.41 s

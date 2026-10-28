@@ -76,8 +76,7 @@ write_agent awake  true "" /usr/bin/caffeinate -i -s
 write_agent backup false "  <key>StartInterval</key><integer>3600</integer>
 " "$ROOT/deploy/backup_db.sh"
 
-# nightly emails were dropped (28 Oct 2026): parents see reports in the app.
-# deploy/nightly_reports.sh still works by hand (writes to outputs/email_outbox).
+# nightly emails were removed (28 Oct 2026): parents see reports in the app. Clean up an old install.
 launchctl bootout "gui/$UID_N/com.geeta.nightly" 2>/dev/null || true; rm -f "$AGENTS/com.geeta.nightly.plist"
 
 # own domain if setup_tunnel.sh has run, otherwise a free quick-tunnel address

@@ -312,8 +312,12 @@ Eval script output: data/raw/handwriting_labels/eval_v1_baseline.json. Next: not
 - Caveat: reference labels - independent second check pending; all real handwriting is from one child.
 
 ## 28 Oct 2026 — Nightly emails dropped; services
-- Nightly parent/admin emails switched off (decision: parents and staff see progress and PDF reports in the app).
-  `com.geeta.nightly` removed from `deploy/install_services.sh`; the code and `deploy/nightly_reports.sh` remain and
-  still write to `outputs/email_outbox/` if run by hand.
+- Nightly parent/admin email feature removed (decision: parents and staff see progress and PDF reports in the app).
+  Removed: email endpoints (`/api/admin/email*`, `/api/admin/reports/preview`, `/api/auth/prefs`), the email boxes on the
+  parent/tutor/admin pages, the store's report-log methods, `com.geeta.nightly`; privacy page updated. The old
+  `email_reports` column and `report_log` table stay in the schema (unused) so existing databases open unchanged.
+  `tools/daily_reports.ipynb` and `deploy/nightly_reports.sh` are no longer used by anything.
+- Tests after removal: quality PASSED, security 74/74, features 58/58 (email checks replaced by "email feature is gone"
+  checks); admin, parent and tutor pages checked in a browser with no console errors.
 - New `com.geeta.publink`: keeps kiruthikportfolio.com/app pointing at the current tunnel address (checked every 2 min).
 - Backups now checked hourly (one copy per day), so a night with the Mac asleep or off is caught up.
