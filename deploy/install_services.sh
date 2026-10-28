@@ -18,7 +18,7 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 AGENTS="$HOME/Library/LaunchAgents"
 LOGS="$ROOT/logs"
 UID_N="$(id -u)"
-SERVICES=(llama webapp awake backup tunnel nightly publink)
+SERVICES=(llama webapp awake backup tunnel publink)
 
 mkdir -p "$AGENTS" "$LOGS"
 
@@ -76,13 +76,9 @@ write_agent awake  true "" /usr/bin/caffeinate -i -s
 write_agent backup false "  <key>StartInterval</key><integer>3600</integer>
 " "$ROOT/deploy/backup_db.sh"
 
-# nightly parent + admin emails at email.send_time (config/credentials.local.yaml, default 22:30)
-SEND_TIME="$(awk -F'"' '/send_time:/{print $2; exit}' "$ROOT/config/credentials.local.yaml" 2>/dev/null)"
-SEND_TIME="${SEND_TIME:-22:30}"
-HH="$((10#${SEND_TIME%%:*}))"; MM="$((10#${SEND_TIME##*:}))"
-write_agent nightly false "  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>$HH</integer><key>Minute</key><integer>$MM</integer></dict>
-" "$ROOT/deploy/nightly_reports.sh"
-echo "  (nightly reports at $SEND_TIME)"
+# nightly emails were dropped (28 Oct 2026): parents see reports in the app.
+# deploy/nightly_reports.sh still works by hand (writes to outputs/email_outbox).
+launchctl bootout "gui/$UID_N/com.geeta.nightly" 2>/dev/null || true; rm -f "$AGENTS/com.geeta.nightly.plist"
 
 # own domain if setup_tunnel.sh has run, otherwise a free quick-tunnel address
 : > "$LOGS/service_tunnel.log"

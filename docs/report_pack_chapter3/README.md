@@ -131,7 +131,7 @@ was measured after training on the held-out sets (section 4).*
 | Six kid "worlds" with buddies (teddy, car, space, dino, unicorn, ocean) | ✅ Implemented |
 | Parent / tutor / admin / kid sign-in, per-child progress, learning memory | ✅ Implemented |
 | Parent PDF report per session | ✅ Implemented |
-| Nightly parent + admin emails (22:30 Adelaide) | ⚠️ Built and tested in outbox mode; live sending needs the Gmail app password |
+| Nightly parent + admin emails | ➖ Built and tested, then switched off: parents and staff view progress and PDF reports in the app instead |
 | WhatsApp delivery | ⚠️ Dry-run only (message payload generated, not sent) |
 | Security (argon2, TOTP 2-step, CSRF, CSP, rate limits, security log) | ✅ Implemented, 78/78 attack tests blocked |
 | Camera "focus helper" (in-browser MediaPipe) | ⚠️ Implemented, off by default; not validated on a real webcam; Phase 2, needs ethics approval |

@@ -310,3 +310,10 @@ Eval script output: data/raw/handwriting_labels/eval_v1_baseline.json. Next: not
 - Gate passed → live server now uses `mmproj-geeta-4b-v2-f16.gguf` (`deploy/run_llama.sh`; old line in `run_llama.sh.v1.bak`).
 - Full suites after the switch: quality PASSED (630 replies 0 hard problems, sweep 18,617 / 0 given away), security 78/78, features 63/63. Live photo smoke test OK.
 - Caveat: reference labels - independent second check pending; all real handwriting is from one child.
+
+## 28 Oct 2026 — Nightly emails dropped; services
+- Nightly parent/admin emails switched off (decision: parents and staff see progress and PDF reports in the app).
+  `com.geeta.nightly` removed from `deploy/install_services.sh`; the code and `deploy/nightly_reports.sh` remain and
+  still write to `outputs/email_outbox/` if run by hand.
+- New `com.geeta.publink`: keeps kiruthikportfolio.com/app pointing at the current tunnel address (checked every 2 min).
+- Backups now checked hourly (one copy per day), so a night with the Mac asleep or off is caught up.
