@@ -316,7 +316,7 @@ Eval script output: data/raw/handwriting_labels/eval_v1_baseline.json. Next: not
   Removed: email endpoints (`/api/admin/email*`, `/api/admin/reports/preview`, `/api/auth/prefs`), the email boxes on the
   parent/tutor/admin pages, the store's report-log methods, `com.geeta.nightly`; privacy page updated. The old
   `email_reports` column and `report_log` table stay in the schema (unused) so existing databases open unchanged.
-  `tools/daily_reports.ipynb` and `deploy/nightly_reports.sh` are no longer used by anything.
+  `tools/daily_reports.ipynb` and `deploy/nightly_reports.sh` deleted.
 - Tests after removal: quality PASSED, security 74/74, features 58/58 (email checks replaced by "email feature is gone"
   checks); admin, parent and tutor pages checked in a browser with no console errors.
 - New `com.geeta.publink`: keeps kiruthikportfolio.com/app pointing at the current tunnel address (checked every 2 min).
