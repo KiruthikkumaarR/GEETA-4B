@@ -277,8 +277,8 @@
 
   function handleReply(r) {
     if (r.reply) { lastGeetaText = r.reply; addMsg("geeta", r.reply); }
-    if (r.metrics && r.metrics.solved) {
-      btnReport.disabled = false;
+    if (r.metrics && r.metrics.solved) btnReport.disabled = false;
+    if (r.metrics && r.metrics.just_solved) {
       setMascot("celebrating");
       burstConfetti();
       setTimeout(function () { setMascot("idle"); }, 2600);
