@@ -1,0 +1,14 @@
+[
+ {
+  "image": "data/eval/handwriting_synth/hw_0001.png",
+  "transcription": "Round 34 to the nearest 100",
+  "ground_truth_answer": "0",
+  "split": "eval"
+ },
+ {
+  "image": "data/eval/handwriting_synth/hw_0003.png",
+  "transcription": "Which number is bigger: 80 or 20",
+  "ground_truth_answer": "80",
+  "split": "eval"
+ }
+]

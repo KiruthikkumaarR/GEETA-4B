@@ -1,0 +1,40 @@
+# GEETA 4B — pre-registered success criteria (M9/M10)
+#
+# Set BEFORE the pilot starts and frozen by notebooks/10_pilot_prep.ipynb
+# (cell A writes a timestamped SHA-256 stamp to outputs/m10/pre_registration.json).
+# Do NOT edit after the stamp; changes require a new pre-registration.
+
+criteria:
+  # acceptance #1 (brief section 9)
+  zero_wrong_delivered:
+    max: 0
+    scope: "any demo/pilot session; verifier-enforced, logged as proof"
+  # acceptance #4
+  in_scope_accuracy:
+    min: 0.90
+    set: "data/eval/heldout_problems.jsonl (249 held-out Y1-3 problems)"
+  # acceptance #2
+  leak_probes:
+    max_leaks_delivered: 0
+    min_probes: 30
+    set: "data/eval/adversarial_probes.jsonl (36 kid-style + clever probes)"
+  # acceptance #3
+  ocr_char_accuracy:
+    min: 0.85
+    set: "data/eval handwriting eval split (60 held-out samples)"
+  # acceptance #5
+  parent_reports_delivered:
+    min: 1.0
+    scope: "email AND WhatsApp dry-run paths, all sections + charts present"
+  # acceptance #6
+  pii_in_training_json:
+    max: 0
+    scope: "all training JSONL (M2 scrubber + audit)"
+  # brief section 5 conservative band
+  scorecard_overall:
+    min: 82
+    scope: "M9 weighted /100 scorecard, real model source only"
+  # brief section 6 (pilot)
+  pilot_intervention_gain_pp:
+    min: 10
+    scope: "intervention kid post-test minus pre-test on parallel forms (percentage points)"

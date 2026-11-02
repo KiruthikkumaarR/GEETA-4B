@@ -1,0 +1,55 @@
+{
+ "baseline_source": "outputs/m4/ocr_smoke_base.json (BASE 8-bit model, pre-finetune)",
+ "baseline": [
+  {
+   "kind": "real",
+   "path": "data/processed/pages/homework_ava_week5_p1.png",
+   "ok": true,
+   "chars": 273,
+   "seconds": 4.7
+  },
+  {
+   "kind": "real",
+   "path": "data/processed/pages/homework_noah_week5_p1.png",
+   "ok": true,
+   "chars": 350,
+   "seconds": 5.1
+  },
+  {
+   "kind": "synth",
+   "path": "data/eval/handwriting_synth/hw_0000.png",
+   "ok": true,
+   "chars": 27,
+   "seconds": 0.4
+  },
+  {
+   "kind": "synth",
+   "path": "data/eval/handwriting_synth/hw_0002.png",
+   "ok": true,
+   "chars": 26,
+   "seconds": 0.4
+  },
+  {
+   "kind": "synth",
+   "path": "data/eval/handwriting_synth/hw_0004.png",
+   "ok": true,
+   "chars": 38,
+   "seconds": 0.5
+  }
+ ],
+ "geeta": [
+  {
+   "path": "data/processed/pages/homework_ava_week5_p1.png",
+   "ok": true,
+   "chars": 436,
+   "seconds": 2.2
+  },
+  {
+   "path": "data/processed/pages/homework_noah_week5_p1.png",
+   "ok": true,
+   "chars": 395,
+   "seconds": 5.4
+  }
+ ],
+ "note": "same 2 real pages; compare chars/seconds/output_head (pages are SYNTHETIC demo homework with fictional children; transcripts omitted)"
+}

@@ -1,0 +1,1227 @@
+[
+ {
+  "q": "A ribbon is 45 cm long. Mia cuts off 20 cm. How long is the ribbon now?",
+  "answer": 25,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A ribbon is 45 cm long. Mia cuts off 20 cm. How long is the ribbon now?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Count back in tens from 45 - that's 2 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Count back in tens from 45 - that's 2 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "65",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 45. Count back in tens from 45 - that's 2 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 75 - 20. Jump back a ten: 65, and another: 55. Now you try yours! Count back in tens from 45 - that's 2 jumps of ten. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "75,55"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Count back in tens from 45 - that's 2 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "25",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 25 cm is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Tom's snake toy is 34 cm and Ana's is 21 cm. How much longer is Tom's?",
+  "answer": 13,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Tom's snake toy is 34 cm and Ana's is 21 cm. How much longer is Tom's?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Start at 21 and count up to 34. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Start at 21 and count up to 34. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "55",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 34. Start at 21 and count up to 34. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: from 5 to 9 I count 6, 7, 8, 9 - that's 4 jumps. Now you try yours! Start at 21 and count up to 34. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Start at 21 and count up to 34. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "13",
+    "kind": "correct",
+    "geeta": "You got it! ⭐ 13 cm is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A jug has 900 mL of juice. We drink 300 mL. How much juice is left?",
+  "answer": 600,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A jug has 900 mL of juice. We drink 300 mL. How much juice is left?",
+    "kind": "question",
+    "geeta": "I like this one! Let's split 300 into hundreds, tens and ones and take away one part at a time. First the hundreds: what's 900 - 300?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Let's split 300 into hundreds, tens and ones and take away one part at a time. First the hundreds: what's 900 - 300?",
+    "flags": []
+   },
+   {
+    "kid": "1200",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 900. Let's split 300 into hundreds, tens and ones and take away one part at a time. First the hundreds: what's 900 - 300?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 365 - 142. 365 - 100 = 265, then 265 - 40 = 225, then 225 - 2 = 223. Now you try yours! Let's split 300 into hundreds, tens and ones and take away one part at a time. First the hundreds: what's 900 - 300?",
+    "flags": [
+     [
+      "NUMBER",
+      "365,142,365,265,265"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's split 300 into hundreds, tens and ones and take away one part at a time. First the hundreds: what's 900 - 300?",
+    "flags": []
+   },
+   {
+    "kid": "600",
+    "kind": "correct",
+    "geeta": "Yes!! 🎉 600 mL is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A dog weighs 12 kg and a cat weighs 4 kg. How much heavier is the dog?",
+  "answer": 8,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A dog weighs 12 kg and a cat weighs 4 kg. How much heavier is the dog?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Start at 4 and count up to 12. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Start at 4 and count up to 12. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "16",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 12. Start at 4 and count up to 12. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: from 12 to 15 I count 13, 14, 15 - that's 3 jumps. Now you try yours! Start at 4 and count up to 12. How many jumps is that?",
+    "flags": [
+     [
+      "NUMBER",
+      "15,13,14,15"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Start at 4 and count up to 12. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "8",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 8 kg is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many centimetres are in 1 metre?",
+  "answer": 100,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many centimetres are in 1 metre?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Here's a fact worth remembering: think of a metre ruler - how many cm fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Here's a fact worth remembering: think of a metre ruler - how many cm fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "10",
+    "kind": "wrong",
+    "geeta": "Not quite - but good try! Here's a fact worth remembering: think of a metre ruler - how many cm fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Here's a fact worth remembering: think of a metre ruler - how many cm fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Here's a fact worth remembering: think of a metre ruler - how many cm fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "100",
+    "kind": "correct",
+    "geeta": "You got it! ⭐ 100 cm is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many grams in 1 kilogram?",
+  "answer": 1000,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many grams in 1 kilogram?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Here's a fact worth remembering: think of a kg - how many g fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Hmm, it IS a tricky one. Let's make it smaller. Here's a fact worth remembering: think of a kg - how many g fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "100",
+    "kind": "wrong",
+    "geeta": "Ooh, close-ish! Let's check it. Here's a fact worth remembering: think of a kg - how many g fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Here's a fact worth remembering: think of a kg - how many g fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Here's a fact worth remembering: think of a kg - how many g fit in it? (Hint: it's a 1 with zeros after it!)",
+    "flags": []
+   },
+   {
+    "kid": "1000",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 1000 g is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many mL in 2 litres?",
+  "answer": 2000,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many mL in 2 litres?",
+    "kind": "question",
+    "geeta": "I like this one! First, how many mL are in ONE L?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 First, how many mL are in ONE L?",
+    "flags": []
+   },
+   {
+    "kid": "200",
+    "kind": "wrong",
+    "geeta": "Hmm, not that one. Let's look again. First, how many mL are in ONE L?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. First, how many mL are in ONE L?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. First, how many mL are in ONE L?",
+    "flags": []
+   },
+   {
+    "kid": "2000",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 2000 mL is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many cm in 3 m?",
+  "answer": 300,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many cm in 3 m?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! First, how many cm are in ONE m?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. First, how many cm are in ONE m?",
+    "flags": []
+   },
+   {
+    "kid": "30",
+    "kind": "wrong",
+    "geeta": "Ooh, close-ish! Let's check it. First, how many cm are in ONE m?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. First, how many cm are in ONE m?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: First, how many cm are in ONE m?",
+    "flags": []
+   },
+   {
+    "kid": "300",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 300 cm is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Two planks are 50 cm and 35 cm long. Put end to end, how long altogether?",
+  "answer": 85,
+  "locked_answer": 85,
+  "exact_tutor": false,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Two planks are 50 cm and 35 cm long. Put end to end, how long altogether?",
+    "kind": "question",
+    "geeta": "Ooh, let's work this one out together! 😊 What's the first thing you notice - or what would you try first?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Here's a nudge: Add the two lengths together.. Try just that bit and tell me what you get.",
+    "flags": []
+   },
+   {
+    "kid": "15",
+    "kind": "wrong",
+    "geeta": "Hmm, not quite - good try though! See the tens first — 50 has 5 tens and 35 has 3 tens. What are those tens together?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's a nudge: Add the two lengths together.. Try just that bit and tell me what you get.",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I love that you're keen to find out! But the fun is working it out yourself. Let's try the first little step together.",
+    "flags": []
+   },
+   {
+    "kid": "85",
+    "kind": "correct",
+    "geeta": "YES! That's exactly it — and YOU got there. Tell me: what was the trickiest little part? I'm putting that in your report. 🌟",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A bag of flour is 5 kg. Mum uses 2 kg. How much flour is left?",
+  "answer": 3,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A bag of flour is 5 kg. Mum uses 2 kg. How much flour is left?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Start at 5 and count back 2 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Start at 5 and count back 2 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "7",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 5. Start at 5 and count back 2 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's how I count back: 15 - 2. I start at 15 and say 14, 13 - so it's 13. Now you try yours! Start at 5 and count back 2 on your fingers. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "15,15,14,13,13"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Start at 5 and count back 2 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "3",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 3 kg is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A bottle holds 750 mL. Another holds 250 mL. How much do they hold altogether?",
+  "answer": 1000,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A bottle holds 750 mL. Another holds 250 mL. How much do they hold altogether?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Let's split 250 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 750 + 200?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Let's split 250 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 750 + 200?",
+    "flags": [
+     [
+      "NUMBER",
+      "200"
+     ]
+    ]
+   },
+   {
+    "kid": "500",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you took away. This one is ADDING - so the answer gets bigger than both numbers. Let's split 250 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 750 + 200?",
+    "flags": [
+     [
+      "NUMBER",
+      "200"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 214 + 123. 214 + 100 = 314, then 314 + 20 = 334, then 334 + 3 = 337. Now you try yours! Let's split 250 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 750 + 200?",
+    "flags": [
+     [
+      "NUMBER",
+      "214,123,214,314,314"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's split 250 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 750 + 200?",
+    "flags": [
+     [
+      "NUMBER",
+      "200"
+     ]
+    ]
+   },
+   {
+    "kid": "1000",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 1000 mL is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "I pay with $10 for a book that costs $7. How much change do I get?",
+  "answer": 3,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "I pay with $10 for a book that costs $7. How much change do I get?",
+    "kind": "question",
+    "geeta": "I like this one! Shopkeepers count UP to work out change! Start at $7 (the cost) and count up to $10 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Shopkeepers count UP to work out change! Start at $7 (the cost) and count up to $10 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "17",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 10. Shopkeepers count UP to work out change! Start at $7 (the cost) and count up to $10 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Shopkeepers count UP to work out change! Start at $7 (the cost) and count up to $10 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Shopkeepers count UP to work out change! Start at $7 (the cost) and count up to $10 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "3",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 $3 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How much change from $5 if I spend $2?",
+  "answer": 3,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How much change from $5 if I spend $2?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Shopkeepers count UP to work out change! Start at $2 (the cost) and count up to $5 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Shopkeepers count UP to work out change! Start at $2 (the cost) and count up to $5 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "7",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 5. Shopkeepers count UP to work out change! Start at $2 (the cost) and count up to $5 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Shopkeepers count UP to work out change! Start at $2 (the cost) and count up to $5 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Shopkeepers count UP to work out change! Start at $2 (the cost) and count up to $5 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "3",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 $3 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How much change from $1 if a lolly costs 35c?",
+  "answer": 65,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How much change from $1 if a lolly costs 35c?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Shopkeepers count UP to work out change! Start at 35c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Shopkeepers count UP to work out change! Start at 35c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "75",
+    "kind": "wrong",
+    "geeta": "Really close! The ones are right - check the tens again. Shopkeepers count UP to work out change! Start at 35c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Shopkeepers count UP to work out change! Start at 35c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Shopkeepers count UP to work out change! Start at 35c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "65",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 65c is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "An apple costs 60c and a banana costs 40c. How much for both?",
+  "answer": 100,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "An apple costs 60c and a banana costs 40c. How much for both?",
+    "kind": "question",
+    "geeta": "I like this one! Count on in tens from 60 - that's 4 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Count on in tens from 60 - that's 4 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "20",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you took away. This one is ADDING - so the answer gets bigger than both numbers. Count on in tens from 60 - that's 4 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 35 + 20. Jump a ten: 45, jump another: 55. Now you try yours! Count on in tens from 60 - that's 4 jumps of ten. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "35,45,55"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Count on in tens from 60 - that's 4 jumps of ten. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "100",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 $1 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A hat costs $8 and a scarf costs $6. How much do they cost altogether?",
+  "answer": 14,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A hat costs $8 and a scarf costs $6. How much do they cost altogether?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Let's make a ten first! How many more does 8 need to make 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Let's make a ten first! How many more does 8 need to make 10?",
+    "flags": []
+   },
+   {
+    "kid": "2",
+    "kind": "wrong",
+    "geeta": "Nice one, 2 is spot on. Yes! So 6 splits into 2 and 4. What's 10 + 4?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 8 + 5. 8 needs 2 to make 10, so 5 splits into 2 and 3. 10 + 3 = 13! Now you try yours! Yes! So 6 splits into 2 and 4. What's 10 + 4?",
+    "flags": [
+     [
+      "NUMBER",
+      "13"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Yes! So 6 splits into 2 and 4. What's 10 + 4?",
+    "flags": []
+   },
+   {
+    "kid": "14",
+    "kind": "correct",
+    "geeta": "You got it! ⭐ $14 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Sam has $20 and spends $12. How much money does Sam have left?",
+  "answer": 8,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Sam has $20 and spends $12. How much money does Sam have left?",
+    "kind": "question",
+    "geeta": "I like this one! Let's take away the tens first. What's 20 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Let's take away the tens first. What's 20 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "32",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 20. Let's take away the tens first. What's 20 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 47 - 13. I do 47 - 10 = 37, then 37 - 3 = 34. Now you try yours! Let's take away the tens first. What's 20 - 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "47,13,47,37,37"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Let's take away the tens first. What's 20 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "8",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 $8 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A toy car costs $9 and a ball costs $4. How much more is the toy car?",
+  "answer": 5,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A toy car costs $9 and a ball costs $4. How much more is the toy car?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Start at 4 and count up to 9. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Start at 4 and count up to 9. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "13",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 9. Start at 4 and count up to 9. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: from 12 to 15 I count 13, 14, 15 - that's 3 jumps. Now you try yours! Start at 4 and count up to 9. How many jumps is that?",
+    "flags": [
+     [
+      "NUMBER",
+      "12,15,14,15"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Start at 4 and count up to 9. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "5",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 $5 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How much change from $2 if I spend $1.20?",
+  "answer": 80,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How much change from $2 if I spend $1.20?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Shopkeepers count UP to work out change! Start at $1.20 (the cost) and count up to $2 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Hmm, it IS a tricky one. Let's make it smaller. Shopkeepers count UP to work out change! Start at $1.20 (the cost) and count up to $2 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "120",
+    "kind": "wrong",
+    "geeta": "Nearly! Let's have another look together. Shopkeepers count UP to work out change! Start at $1.20 (the cost) and count up to $2 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Shopkeepers count UP to work out change! Start at $1.20 (the cost) and count up to $2 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Shopkeepers count UP to work out change! Start at $1.20 (the cost) and count up to $2 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "80",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 80c is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Jen has 80c. She buys a sticker for 45c. How much is left?",
+  "answer": 35,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Jen has 80c. She buys a sticker for 45c. How much is left?",
+    "kind": "question",
+    "geeta": "I like this one! Let's take away the tens first. What's 80 - 40?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Let's take away the tens first. What's 80 - 40?",
+    "flags": [
+     [
+      "NUMBER",
+      "40"
+     ]
+    ]
+   },
+   {
+    "kid": "125",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 80. Let's take away the tens first. What's 80 - 40?",
+    "flags": [
+     [
+      "NUMBER",
+      "40"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 47 - 13. I do 47 - 10 = 37, then 37 - 3 = 34. Now you try yours! Let's take away the tens first. What's 80 - 40?",
+    "flags": [
+     [
+      "NUMBER",
+      "47,13,47,37,37"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Let's take away the tens first. What's 80 - 40?",
+    "flags": [
+     [
+      "NUMBER",
+      "40"
+     ]
+    ]
+   },
+   {
+    "kid": "35",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 35c is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A pencil is 18 cm. A crayon is 9 cm. What is the difference in length?",
+  "answer": 9,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A pencil is 18 cm. A crayon is 9 cm. What is the difference in length?",
+    "kind": "question",
+    "geeta": "I like this one! Start at 9 and count up to 18. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Start at 9 and count up to 18. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "27",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 18. Start at 9 and count up to 18. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: from 12 to 15 I count 13, 14, 15 - that's 3 jumps. Now you try yours! Start at 9 and count up to 18. How many jumps is that?",
+    "flags": [
+     [
+      "NUMBER",
+      "12,15,13,14,15"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Start at 9 and count up to 18. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "9",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 9 cm is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A bucket holds 10 L. I pour out 4 L. How much water is left?",
+  "answer": 6,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A bucket holds 10 L. I pour out 4 L. How much water is left?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Start at 10 and count back 4 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Start at 10 and count back 4 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "14",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 10. Start at 10 and count back 4 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's how I count back: 15 - 2. I start at 15 and say 14, 13 - so it's 13. Now you try yours! Start at 10 and count back 4 on your fingers. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "15,15,13,13"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Start at 10 and count back 4 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "6",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 6 L is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many minutes are in 2 hours?",
+  "answer": 120,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many minutes are in 2 hours?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! 2 groups of 60 is the same as double 60. What's 60 + 60?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. 2 groups of 60 is the same as double 60. What's 60 + 60?",
+    "flags": []
+   },
+   {
+    "kid": "60",
+    "kind": "wrong",
+    "geeta": "So close - I think you counted one group too few. Let's count the groups carefully. 2 groups of 60 is the same as double 60. What's 60 + 60?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. 2 groups of 60 is the same as double 60. What's 60 + 60?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: 2 groups of 60 is the same as double 60. What's 60 + 60?",
+    "flags": []
+   },
+   {
+    "kid": "120",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 120 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A tree is 7 m tall. A fence is 2 m tall. How much taller is the tree?",
+  "answer": 5,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A tree is 7 m tall. A fence is 2 m tall. How much taller is the tree?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Start at 2 and count up to 7. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Start at 2 and count up to 7. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "9",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 7. Start at 2 and count up to 7. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: from 12 to 15 I count 13, 14, 15 - that's 3 jumps. Now you try yours! Start at 2 and count up to 7. How many jumps is that?",
+    "flags": [
+     [
+      "NUMBER",
+      "12,15,13,14,15"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Start at 2 and count up to 7. How many jumps is that?",
+    "flags": []
+   },
+   {
+    "kid": "5",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 5 m is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Lee bought a pen for $3 and a pad for $5. How much did he spend in total?",
+  "answer": 8,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Lee bought a pen for $3 and a pad for $5. How much did he spend in total?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Start at 5 and count on 3 more on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Hmm, it IS a tricky one. Let's make it smaller. Start at 5 and count on 3 more on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "2",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you took away. This one is ADDING - so the answer gets bigger than both numbers. Start at 5 and count on 3 more on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's how I count on: 12 + 2. I start at 12 and say 13, 14 - so it's 14. Now you try yours! Start at 5 and count on 3 more on your fingers. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "12,12,13,14,14"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Start at 5 and count on 3 more on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "8",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ $8 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ }
+]

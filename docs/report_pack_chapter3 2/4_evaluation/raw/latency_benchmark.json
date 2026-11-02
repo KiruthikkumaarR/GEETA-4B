@@ -1,0 +1,233 @@
+{
+ "summary": {
+  "measured_at": "2026-10-16 18:37 ACDT",
+  "model_version": "geeta-4b-q4_k_m.gguf + mmproj-geeta-4b-f16.gguf (Qwen3.5-4B + text LoRA + vision-tower fine-tune), llama.cpp llama-server, -ngl 99",
+  "hardware": "Apple M4 Max, 16 CPU cores, 48 GB unified memory, macOS 26.5, Metal full offload; single sequential requests; an unrelated idle llama-server was also resident",
+  "inputs": "synthetic only (no child data)",
+  "tutor_turn_python_exact_first_reply": {
+   "n": 10,
+   "mean_s": 0.001,
+   "median_s": 0.0,
+   "p95_s": 0.012,
+   "max_s": 0.012
+  },
+  "tutor_turn_python_exact_wrong_answer_reply": {
+   "n": 10,
+   "mean_s": 0.0,
+   "median_s": 0.0,
+   "p95_s": 0.0,
+   "max_s": 0.0
+  },
+  "model_hint_raw_120_tokens_max": {
+   "n": 10,
+   "mean_s": 0.494,
+   "median_s": 0.282,
+   "p95_s": 2.559,
+   "max_s": 2.559
+  },
+  "ocr_synthetic_handwriting_line": {
+   "n": 15,
+   "mean_s": 0.407,
+   "median_s": 0.406,
+   "p95_s": 0.453,
+   "max_s": 0.47
+  }
+ },
+ "rows": [
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "What is 27 + 15?",
+   "first_reply_s": 0.012,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "56 - 29 = ?",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "6 x 4 = ?",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "Tom has 14 apples. He gets 9 more. How many apples now?",
+   "first_reply_s": 0.001,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "Share 20 stickers equally between 4 kids. How many each?",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "What is half of 16?",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "7 + ? = 15",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "How many tens are in 47?",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "A pencil costs 40 cents and a rubber costs 25 cents. How much for both?",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "tutor_turn_python_exact",
+   "question": "What number is 10 more than 86?",
+   "first_reply_s": 0.0,
+   "wrong_answer_reply_s": 0.0
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "A farmer has some cows and ducks. Together they have 10 legs. Can you help me think about it?",
+   "seconds": 2.559,
+   "reply_chars": 79
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "How do I know if a shape is symmetrical?",
+   "seconds": 0.253,
+   "reply_chars": 79
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "Why do we carry the one when we add?",
+   "seconds": 0.378,
+   "reply_chars": 129
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "What does 'estimate' mean?",
+   "seconds": 0.23,
+   "reply_chars": 73
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "Is 0 an even number?",
+   "seconds": 0.334,
+   "reply_chars": 107
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "How can I check my take-away answer?",
+   "seconds": 0.314,
+   "reply_chars": 103
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "What does 'altogether' mean in a word problem?",
+   "seconds": 0.311,
+   "reply_chars": 98
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "How do I count backwards by 10s?",
+   "seconds": 0.22,
+   "reply_chars": 51
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "What's the difference between a square and a rectangle?",
+   "seconds": 0.138,
+   "reply_chars": 27
+  },
+  {
+   "test": "model_hint_raw",
+   "prompt": "How do I read a clock's minute hand?",
+   "seconds": 0.199,
+   "reply_chars": 51
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0001.png",
+   "seconds": 0.346
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0003.png",
+   "seconds": 0.411
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0005.png",
+   "seconds": 0.442
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0007.png",
+   "seconds": 0.371
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0009.png",
+   "seconds": 0.446
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0011.png",
+   "seconds": 0.406
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0013.png",
+   "seconds": 0.448
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0015.png",
+   "seconds": 0.453
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0017.png",
+   "seconds": 0.401
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0019.png",
+   "seconds": 0.47
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0021.png",
+   "seconds": 0.39
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0023.png",
+   "seconds": 0.322
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0025.png",
+   "seconds": 0.401
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0027.png",
+   "seconds": 0.36
+  },
+  {
+   "test": "ocr_synthetic_handwriting",
+   "image": "data/eval/handwriting_synth/hw_0029.png",
+   "seconds": 0.441
+  }
+ ]
+}

@@ -1,0 +1,1982 @@
+[
+ {
+  "q": "Lily has 25 marbles and her friend gives her 17 more. How many marbles does Lily have?",
+  "answer": 42,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Lily has 25 marbles and her friend gives her 17 more. How many marbles does Lily have?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "32",
+    "kind": "wrong",
+    "geeta": "Hmm, not that one. Let's look again. Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 23 + 14. I do 23 + 10 = 33, then 33 + 4 = 37. Now you try yours! Let's add the tens first. What's 25 + 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "23,14,23,33,33"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "42",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 42 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is the sum of 34 and 21?",
+  "answer": 55,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is the sum of 34 and 21?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Let's add the tens first. What's 34 + 20?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Let's add the tens first. What's 34 + 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "13",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you took away. This one is ADDING - so the answer gets bigger than both numbers. Let's add the tens first. What's 34 + 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 23 + 14. I do 23 + 10 = 33, then 33 + 4 = 37. Now you try yours! Let's add the tens first. What's 34 + 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "23,14,23,33,33"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's add the tens first. What's 34 + 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "55",
+    "kind": "correct",
+    "geeta": "Yes!! 🎉 55 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Subtract 15 from 40.",
+  "answer": 25,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Subtract 15 from 40.",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "55",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 40. Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 47 - 13. I do 47 - 10 = 37, then 37 - 3 = 34. Now you try yours! Let's take away the tens first. What's 40 - 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "47,13,47,37,37"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "25",
+    "kind": "correct",
+    "geeta": "You got it! ⭐ 25 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "I have 12 grapes and eat 5. How many grapes are left?",
+  "answer": 7,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "I have 12 grapes and eat 5. How many grapes are left?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Let's jump back to 10 first. How many do we take away from 12 to get to 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Let's jump back to 10 first. How many do we take away from 12 to get to 10?",
+    "flags": []
+   },
+   {
+    "kid": "17",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 12. Let's jump back to 10 first. How many do we take away from 12 to get to 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 14 - 6. Take 4 to get to 10, then 2 more: 10 - 2 = 8. Now you try yours! Let's jump back to 10 first. How many do we take away from 12 to get to 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "14"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's jump back to 10 first. How many do we take away from 12 to get to 10?",
+    "flags": []
+   },
+   {
+    "kid": "7",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 7 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A spider has 8 legs. How many legs on 2 spiders?",
+  "answer": 16,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A spider has 8 legs. How many legs on 2 spiders?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! 2 groups of 8 is the same as double 8. What's 8 + 8?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 2 groups of 8 is the same as double 8. What's 8 + 8?",
+    "flags": []
+   },
+   {
+    "kid": "10",
+    "kind": "wrong",
+    "geeta": "Hmm, that's 2 + 8. But this is 2 GROUPS of 8 - lots of 8s, not just one! 2 groups of 8 is the same as double 8. What's 8 + 8?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 2 circles and put 8 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. 2 groups of 8 is the same as double 8. What's 8 + 8?",
+    "flags": []
+   },
+   {
+    "kid": "16",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 16 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many legs do 3 dogs have?",
+  "answer": 12,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many legs do 3 dogs have?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Each dog has 4 legs - so that's 3 groups of 4. Let's skip count by 4s: 4, 8... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Each dog has 4 legs - so that's 3 groups of 4. Let's skip count by 4s: 4, 8... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "7",
+    "kind": "wrong",
+    "geeta": "Hmm, that's 3 + 4. But this is 3 GROUPS of 4 - lots of 4s, not just one! Each dog has 4 legs - so that's 3 groups of 4. Let's skip count by 4s: 4, 8... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 3 circles and put 4 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Each dog has 4 legs - so that's 3 groups of 4. Let's skip count by 4s: 4, 8... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "12",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 12 legs is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Which is bigger, 56 or 65?",
+  "answer": 65,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Which is bigger, 56 or 65?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Compare the tens first: 56 has 5 tens and 65 has 6 tens. So which number is bigger?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Compare the tens first: 56 has 5 tens and 65 has 6 tens. So which number is bigger?",
+    "flags": []
+   },
+   {
+    "kid": "56",
+    "kind": "wrong",
+    "geeta": "You've got the right digits, but they swapped places! Which one goes in the tens place? Compare the tens first: 56 has 5 tens and 65 has 6 tens. So which number is bigger?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Compare the tens first: 56 has 5 tens and 65 has 6 tens. So which number is bigger?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Compare the tens first: 56 has 5 tens and 65 has 6 tens. So which number is bigger?",
+    "flags": []
+   },
+   {
+    "kid": "65",
+    "kind": "correct",
+    "geeta": "Yes!! 🎉 65 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many 5c coins make 20c?",
+  "answer": 4,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many 5c coins make 20c?",
+    "kind": "question",
+    "geeta": "I like this one! Count up in 5c coins: 5c, 10c... until you reach 20c. How many coins did you count?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Count up in 5c coins: 5c, 10c... until you reach 20c. How many coins did you count?",
+    "flags": []
+   },
+   {
+    "kid": "5",
+    "kind": "wrong",
+    "geeta": "Ooh, SO close - just 1 away! Count again super carefully. Count up in 5c coins: 5c, 10c... until you reach 20c. How many coins did you count?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing 5 circles, then share out 20 dots one at a time - one in each circle, round and round. How many dots in each circle?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Count up in 5c coins: 5c, 10c... until you reach 20c. How many coins did you count?",
+    "flags": []
+   },
+   {
+    "kid": "4",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 4 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 4 tens?",
+  "answer": 40,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 4 tens?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! 4 tens means 4 groups of ten. Count by 10s, 4 times, on your fingers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Hmm, it IS a tricky one. Let's make it smaller. 4 tens means 4 groups of ten. Count by 10s, 4 times, on your fingers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "4",
+    "kind": "wrong",
+    "geeta": "Not quite - but good try! 4 tens means 4 groups of ten. Count by 10s, 4 times, on your fingers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. 4 tens means 4 groups of ten. Count by 10s, 4 times, on your fingers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. 4 tens means 4 groups of ten. Count by 10s, 4 times, on your fingers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "40",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 40 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What's 9 more than 31?",
+  "answer": 40,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What's 9 more than 31?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Start at 31 and count on 9. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Hmm, it IS a tricky one. Let's make it smaller. Start at 31 and count on 9. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "22",
+    "kind": "wrong",
+    "geeta": "Nearly! Let's have another look together. Start at 31 and count on 9. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Start at 31 and count on 9. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Start at 31 and count on 9. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "40",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 40 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Take 8 away from 20.",
+  "answer": 12,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Take 8 away from 20.",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Start at 20 and count back 8 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Start at 20 and count back 8 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "28",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 20. Start at 20 and count back 8 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's how I count back: 9 - 3. I start at 9 and say 8, 7, 6 - so it's 6. Now you try yours! Start at 20 and count back 8 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Start at 20 and count back 8 on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "12",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 12 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "twelve plus seven",
+  "answer": 19,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "twelve plus seven",
+    "kind": "question",
+    "geeta": "Let's do this one together! Start at 12 and count on 7 more on your fingers. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Start at 12 and count on 7 more on your fingers. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "12"
+     ]
+    ]
+   },
+   {
+    "kid": "18",
+    "kind": "wrong",
+    "geeta": "Ooh, SO close - just 1 away! Count again super carefully. Start at 12 and count on 7 more on your fingers. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "12"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's how I count on: 6 + 3. I start at 6 and say 7, 8, 9 - so it's 9. Now you try yours! Start at 12 and count on 7 more on your fingers. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "12"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Start at 12 and count on 7 more on your fingers. Where do you land?",
+    "flags": [
+     [
+      "NUMBER",
+      "12"
+     ]
+    ]
+   },
+   {
+    "kid": "19",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 19 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 3 times 7?",
+  "answer": 21,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 3 times 7?",
+    "kind": "question",
+    "geeta": "I like this one! That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "14"
+     ]
+    ]
+   },
+   {
+    "kid": "10",
+    "kind": "wrong",
+    "geeta": "Hmm, that's 3 + 7. But this is 3 GROUPS of 7 - lots of 7s, not just one! That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "14"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 3 circles and put 7 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "14"
+     ]
+    ]
+   },
+   {
+    "kid": "21",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 21 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "15 divided by 5",
+  "answer": 3,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "15 divided by 5",
+    "kind": "question",
+    "geeta": "Let's do this one together! Let's share 15 into 5 equal groups. Count by 5s: 5, 10... how many jumps until you reach 15?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Let's share 15 into 5 equal groups. Count by 5s: 5, 10... how many jumps until you reach 15?",
+    "flags": []
+   },
+   {
+    "kid": "10",
+    "kind": "wrong",
+    "geeta": "Hmm, not that one. Let's look again. Let's share 15 into 5 equal groups. Count by 5s: 5, 10... how many jumps until you reach 15?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing 5 circles, then share out 15 dots one at a time - one in each circle, round and round. How many dots in each circle?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Let's share 15 into 5 equal groups. Count by 5s: 5, 10... how many jumps until you reach 15?",
+    "flags": []
+   },
+   {
+    "kid": "3",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 3 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "There were 40 kids on the bus. 18 got off. How many are on the bus now?",
+  "answer": 22,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "There were 40 kids on the bus. 18 got off. How many are on the bus now?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "58",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 40. Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 47 - 13. I do 47 - 10 = 37, then 37 - 3 = 34. Now you try yours! Let's take away the tens first. What's 40 - 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "47,13,47,37,37"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Let's take away the tens first. What's 40 - 10?",
+    "flags": []
+   },
+   {
+    "kid": "22",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 22 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Jack has 3 packets of 10 stickers. How many stickers?",
+  "answer": 30,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Jack has 3 packets of 10 stickers. How many stickers?",
+    "kind": "question",
+    "geeta": "I like this one! That's 3 groups of 10. Let's skip count by 10s: 10, 20... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. That's 3 groups of 10. Let's skip count by 10s: 10, 20... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "13",
+    "kind": "wrong",
+    "geeta": "Hmm, that's 3 + 10. But this is 3 GROUPS of 10 - lots of 10s, not just one! That's 3 groups of 10. Let's skip count by 10s: 10, 20... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 3 circles and put 10 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. That's 3 groups of 10. Let's skip count by 10s: 10, 20... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "30",
+    "kind": "correct",
+    "geeta": "You got it! ⭐ 30 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 1 less than 200?",
+  "answer": 199,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 1 less than 200?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Start at 200 and count back 1. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Start at 200 and count back 1. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "201",
+    "kind": "wrong",
+    "geeta": "Not quite - but good try! Start at 200 and count back 1. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Start at 200 and count back 1. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Start at 200 and count back 1. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "199",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 199 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Count back by 2s: 20, 18, 16, what comes next?",
+  "answer": 14,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Count back by 2s: 20, 18, 16, what comes next?",
+    "kind": "question",
+    "geeta": "Let's do it! Here it is:\n20, 18, 16, ___\nThere is 1 gap to fill. Let's find the secret jump first! 🐸 Look at 20 and 18 — they sit right next to each other. How much smaller is 18 than 20?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Count on from 20 until you reach 18, using your fingers. How many fingers are up?",
+    "flags": []
+   },
+   {
+    "kid": "15",
+    "kind": "wrong",
+    "geeta": "That looks like a number from the pattern! 🙂 First let's find the jump: how much do we add to get from 20 to 18?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's the secret: this pattern goes down by 2 every time! What number comes straight after 16?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No rush! What number comes straight after 16?",
+    "flags": []
+   },
+   {
+    "kid": "14",
+    "kind": "correct",
+    "geeta": "Brilliant! 🌟 14 is right!\nYou filled the whole pattern:\n20, 18, 16, 14\nYOU did that! 🏆 Want to pick another question?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What comes before 100?",
+  "answer": 99,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What comes before 100?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Count back just one from 100. What number is that?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. Count back just one from 100. What number is that?",
+    "flags": []
+   },
+   {
+    "kid": "101",
+    "kind": "wrong",
+    "geeta": "Nearly! Let's have another look together. Count back just one from 100. What number is that?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Count back just one from 100. What number is that?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Count back just one from 100. What number is that?",
+    "flags": []
+   },
+   {
+    "kid": "99",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 99 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many sides on a square?",
+  "answer": 4,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many sides on a square?",
+    "kind": "question",
+    "geeta": "Let's do this one together! A square looks like a window or a cracker. Imagine tracing around it with your finger and count the sides as you go. How many?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. A square looks like a window or a cracker. Imagine tracing around it with your finger and count the sides as you go. How many?",
+    "flags": []
+   },
+   {
+    "kid": "3",
+    "kind": "wrong",
+    "geeta": "Ooh, SO close - just 1 away! Count again super carefully. A square looks like a window or a cracker. Imagine tracing around it with your finger and count the sides as you go. How many?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. A square looks like a window or a cracker. Imagine tracing around it with your finger and count the sides as you go. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: A square looks like a window or a cracker. Imagine tracing around it with your finger and count the sides as you go. How many?",
+    "flags": []
+   },
+   {
+    "kid": "4",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 4 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is half of 30?",
+  "answer": 15,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is half of 30?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Half means sharing into 2 equal groups. What number plus itself makes 30?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Hmm, it IS a tricky one. Let's make it smaller. Half means sharing into 2 equal groups. What number plus itself makes 30?",
+    "flags": []
+   },
+   {
+    "kid": "60",
+    "kind": "wrong",
+    "geeta": "Hmm, not that one. Let's look again. Half means sharing into 2 equal groups. What number plus itself makes 30?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Half means sharing into 2 equal groups. What number plus itself makes 30?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Half means sharing into 2 equal groups. What number plus itself makes 30?",
+    "flags": []
+   },
+   {
+    "kid": "15",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 15 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 6 plus 6 plus 6?",
+  "answer": 18,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 6 plus 6 plus 6?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Add them one at a time. What's 6 + 6?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Hmm, it IS a tricky one. Let's make it smaller. Add them one at a time. What's 6 + 6?",
+    "flags": []
+   },
+   {
+    "kid": "12",
+    "kind": "wrong",
+    "geeta": "Nice one, 12 is spot on. And now the last one: what's 12 + 6?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. And now the last one: what's 12 + 6?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: And now the last one: what's 12 + 6?",
+    "flags": []
+   },
+   {
+    "kid": "18",
+    "kind": "correct",
+    "geeta": "You got it! ⭐ 18 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "50 - 25",
+  "answer": 25,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "50 - 25",
+    "kind": "question",
+    "geeta": "Let's do this one together! Let's take away the tens first. What's 50 - 20?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Let's take away the tens first. What's 50 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "75",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 50. Let's take away the tens first. What's 50 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 47 - 13. I do 47 - 10 = 37, then 37 - 3 = 34. Now you try yours! Let's take away the tens first. What's 50 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "47,13,47,37,37"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Let's take away the tens first. What's 50 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "25",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 25 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How much change from $1 if I spend 60c?",
+  "answer": 40,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How much change from $1 if I spend 60c?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Shopkeepers count UP to work out change! Start at 60c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Shopkeepers count UP to work out change! Start at 60c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "160",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 100. Shopkeepers count UP to work out change! Start at 60c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Shopkeepers count UP to work out change! Start at 60c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Shopkeepers count UP to work out change! Start at 60c (the cost) and count up to $1 (what was paid). How much did you count up?",
+    "flags": []
+   },
+   {
+    "kid": "40",
+    "kind": "correct",
+    "geeta": "Yes!! 🎉 40c is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 45 rounded to the nearest 10?",
+  "answer": 50,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 45 rounded to the nearest 10?",
+    "kind": "question",
+    "geeta": "I like this one! Here's the rule: look at the ones digit of 45 - it's 5. If it's 5 or more we round UP, if it's 4 or less we round DOWN. So which ten do you get?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Here's the rule: look at the ones digit of 45 - it's 5. If it's 5 or more we round UP, if it's 4 or less we round DOWN. So which ten do you get?",
+    "flags": []
+   },
+   {
+    "kid": "40",
+    "kind": "wrong",
+    "geeta": "Really close! The ones are right - check the tens again. Here's the rule: look at the ones digit of 45 - it's 5. If it's 5 or more we round UP, if it's 4 or less we round DOWN. So which ten do you get?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Here's the rule: look at the ones digit of 45 - it's 5. If it's 5 or more we round UP, if it's 4 or less we round DOWN. So which ten do you get?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Here's the rule: look at the ones digit of 45 - it's 5. If it's 5 or more we round UP, if it's 4 or less we round DOWN. So which ten do you get?",
+    "flags": []
+   },
+   {
+    "kid": "50",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 50 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many days in 2 weeks?",
+  "answer": 14,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many days in 2 weeks?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! 2 groups of 7 is the same as double 7. What's 7 + 7?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. 2 groups of 7 is the same as double 7. What's 7 + 7?",
+    "flags": []
+   },
+   {
+    "kid": "7",
+    "kind": "wrong",
+    "geeta": "So close - I think you counted one group too few. Let's count the groups carefully. 2 groups of 7 is the same as double 7. What's 7 + 7?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 2 circles and put 7 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. 2 groups of 7 is the same as double 7. What's 7 + 7?",
+    "flags": []
+   },
+   {
+    "kid": "14",
+    "kind": "correct",
+    "geeta": "Yesss, nailed it! 🌟 14 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is the total of 15 and 25?",
+  "answer": 40,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is the total of 15 and 25?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "30",
+    "kind": "wrong",
+    "geeta": "Hmm, not that one. Let's look again. Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 23 + 14. I do 23 + 10 = 33, then 33 + 4 = 37. Now you try yours! Let's add the tens first. What's 25 + 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "23,14,23,33,33"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's add the tens first. What's 25 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "40",
+    "kind": "correct",
+    "geeta": "You got it! ⭐ 40 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Mum baked 24 cupcakes and put them into 4 boxes equally. How many in each box?",
+  "answer": 6,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Mum baked 24 cupcakes and put them into 4 boxes equally. How many in each box?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Let's share 24 into 4 equal groups. Count by 4s: 4, 8... how many jumps until you reach 24?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Let's share 24 into 4 equal groups. Count by 4s: 4, 8... how many jumps until you reach 24?",
+    "flags": []
+   },
+   {
+    "kid": "20",
+    "kind": "wrong",
+    "geeta": "Ooh, close-ish! Let's check it. Let's share 24 into 4 equal groups. Count by 4s: 4, 8... how many jumps until you reach 24?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing 4 circles, then share out 24 dots one at a time - one in each circle, round and round. How many dots in each circle?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's share 24 into 4 equal groups. Count by 4s: 4, 8... how many jumps until you reach 24?",
+    "flags": []
+   },
+   {
+    "kid": "6",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 6 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Double 25",
+  "answer": 50,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Double 25",
+    "kind": "question",
+    "geeta": "Let's do this one together! Double means two lots of the same. What's 25 + 25?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Double means two lots of the same. What's 25 + 25?",
+    "flags": []
+   },
+   {
+    "kid": "27",
+    "kind": "wrong",
+    "geeta": "Not quite - but good try! Double means two lots of the same. What's 25 + 25?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Double means two lots of the same. What's 25 + 25?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Double means two lots of the same. What's 25 + 25?",
+    "flags": []
+   },
+   {
+    "kid": "50",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 50 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Three groups of five",
+  "answer": 15,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Three groups of five",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! That's 3 groups of 5. Let's skip count by 5s: 5, 10... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "No worries, we'll do it together. That's 3 groups of 5. Let's skip count by 5s: 5, 10... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "8",
+    "kind": "wrong",
+    "geeta": "Hmm, that's 3 + 5. But this is 3 GROUPS of 5 - lots of 5s, not just one! That's 3 groups of 5. Let's skip count by 5s: 5, 10... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 3 circles and put 5 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: That's 3 groups of 5. Let's skip count by 5s: 5, 10... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "15",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 15 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 7 add 6?",
+  "answer": 13,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 7 add 6?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Let's make a ten first! How many more does 7 need to make 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Let's make a ten first! How many more does 7 need to make 10?",
+    "flags": []
+   },
+   {
+    "kid": "1",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you took away. This one is ADDING - so the answer gets bigger than both numbers. Let's make a ten first! How many more does 7 need to make 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 9 + 6. 9 needs 1 to make 10, so 6 splits into 1 and 5. 10 + 5 = 15! Now you try yours! Let's make a ten first! How many more does 7 need to make 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "15"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Let's make a ten first! How many more does 7 need to make 10?",
+    "flags": []
+   },
+   {
+    "kid": "13",
+    "kind": "correct",
+    "geeta": "That's right - high five! ✋ 13 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "I'm thinking of a number. If I add 5 I get 12. What's my number?",
+  "answer": 7,
+  "locked_answer": 7,
+  "exact_tutor": false,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "I'm thinking of a number. If I add 5 I get 12. What's my number?",
+    "kind": "question",
+    "geeta": "Ooh, let's work this one out together! 😊 What's the first thing you notice - or what would you try first?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Here's a nudge: Set up the equation where x is the unknown number.. Try just that bit and tell me what you get.",
+    "flags": []
+   },
+   {
+    "kid": "17",
+    "kind": "wrong",
+    "geeta": "Hmm, not quite - good try though! Start at 12 and count on in 5s — one jump lands where?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Here's a nudge: Subtract 5 from both sides to isolate x.. Try just that bit and tell me what you get.",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I know, it's tempting! But you already have a brilliant idea in there — let's use it.",
+    "flags": []
+   },
+   {
+    "kid": "7",
+    "kind": "correct",
+    "geeta": "YES! That's exactly it — and YOU got there. Tell me: what was the trickiest little part? I'm putting that in your report. 🌟",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "How many 10s in 60?",
+  "answer": 6,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "How many 10s in 60?",
+    "kind": "question",
+    "geeta": "Let's do this one together! How many groups of 10 fit into 60? Count by 10s until you reach 60 - count your jumps.",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "Okay, let's take it nice and slow. How many groups of 10 fit into 60? Count by 10s until you reach 60 - count your jumps.",
+    "flags": []
+   },
+   {
+    "kid": "60",
+    "kind": "wrong",
+    "geeta": "Nearly! Let's have another look together. How many groups of 10 fit into 60? Count by 10s until you reach 60 - count your jumps.",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. How many groups of 10 fit into 60? Count by 10s until you reach 60 - count your jumps.",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: How many groups of 10 fit into 60? Count by 10s until you reach 60 - count your jumps.",
+    "flags": []
+   },
+   {
+    "kid": "6",
+    "kind": "correct",
+    "geeta": "Yes!! 🎉 6 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 100 + 250?",
+  "answer": 350,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 100 + 250?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Let's split 100 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 250 + 100?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Let's split 100 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 250 + 100?",
+    "flags": []
+   },
+   {
+    "kid": "150",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you took away. This one is ADDING - so the answer gets bigger than both numbers. Let's split 100 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 250 + 100?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 214 + 123. 214 + 100 = 314, then 314 + 20 = 334, then 334 + 3 = 337. Now you try yours! Let's split 100 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 250 + 100?",
+    "flags": [
+     [
+      "NUMBER",
+      "214,123,214,314,314"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Let's split 100 into hundreds, tens and ones and add one part at a time. First the hundreds: what's 250 + 100?",
+    "flags": []
+   },
+   {
+    "kid": "350",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 350 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Ella had 63 stickers. She gave 21 to her brother. How many does she have now?",
+  "answer": 42,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Ella had 63 stickers. She gave 21 to her brother. How many does she have now?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Let's take away the tens first. What's 63 - 20?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Let's take away the tens first. What's 63 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "84",
+    "kind": "wrong",
+    "geeta": "Ooh, I think you added. This one is TAKING AWAY - so the answer is smaller than 63. Let's take away the tens first. What's 63 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 47 - 13. I do 47 - 10 = 37, then 37 - 3 = 34. Now you try yours! Let's take away the tens first. What's 63 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "47,13,47,37,37"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: Let's take away the tens first. What's 63 - 20?",
+    "flags": [
+     [
+      "NUMBER",
+      "20"
+     ]
+    ]
+   },
+   {
+    "kid": "42",
+    "kind": "correct",
+    "geeta": "Woohoo, that's it! 🙌 42 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "A box holds 6 eggs. How many eggs in 5 boxes?",
+  "answer": 30,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "A box holds 6 eggs. How many eggs in 5 boxes?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! That's 5 groups of 6. Let's skip count by 6s: 6, 12... keep going until you've said 5 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. That's 5 groups of 6. Let's skip count by 6s: 6, 12... keep going until you've said 5 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "12"
+     ]
+    ]
+   },
+   {
+    "kid": "11",
+    "kind": "wrong",
+    "geeta": "Hmm, that's 5 + 6. But this is 5 GROUPS of 6 - lots of 6s, not just one! That's 5 groups of 6. Let's skip count by 6s: 6, 12... keep going until you've said 5 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "12"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 5 circles and put 6 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: That's 5 groups of 6. Let's skip count by 6s: 6, 12... keep going until you've said 5 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "12"
+     ]
+    ]
+   },
+   {
+    "kid": "30",
+    "kind": "correct",
+    "geeta": "Yes!! 🎉 30 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What number is 100 more than 245?",
+  "answer": 345,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What number is 100 more than 245?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! Start at 245 and count on 100. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's fine! Every maths whiz gets stuck sometimes. Start at 245 and count on 100. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "255",
+    "kind": "wrong",
+    "geeta": "Hmm, not that one. Let's look again. Start at 245 and count on 100. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let's go super slow. Start at 245 and count on 100. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "Ha, nice try! 😄 I'm not allowed to spill it - but I'll help you get it, promise. Start at 245 and count on 100. Where do you land?",
+    "flags": []
+   },
+   {
+    "kid": "345",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 345 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "Share 30 grapes between 3 friends. How many does each friend get?",
+  "answer": 10,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "Share 30 grapes between 3 friends. How many does each friend get?",
+    "kind": "question",
+    "geeta": "Let's do this one together! Let's share 30 into 3 equal groups. Count by 3s: 3, 6... how many jumps until you reach 30?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Let's share 30 into 3 equal groups. Count by 3s: 3, 6... how many jumps until you reach 30?",
+    "flags": []
+   },
+   {
+    "kid": "27",
+    "kind": "wrong",
+    "geeta": "Hmm, not that one. Let's look again. Let's share 30 into 3 equal groups. Count by 3s: 3, 6... how many jumps until you reach 30?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing 3 circles, then share out 30 dots one at a time - one in each circle, round and round. How many dots in each circle?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "No spoilers from me! 🤐 But I've got a good clue for you: Let's share 30 into 3 equal groups. Count by 3s: 3, 6... how many jumps until you reach 30?",
+    "flags": []
+   },
+   {
+    "kid": "10",
+    "kind": "correct",
+    "geeta": "Spot on! 🎯 10 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "What is 18 + 18?",
+  "answer": 36,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "What is 18 + 18?",
+    "kind": "question",
+    "geeta": "Ooh, a good one! Let's add the tens first. What's 18 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 Let's add the tens first. What's 18 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "26",
+    "kind": "wrong",
+    "geeta": "Nearly! Let's have another look together. Let's add the tens first. What's 18 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Let me show you a different one: 23 + 14. I do 23 + 10 = 33, then 33 + 4 = 37. Now you try yours! Let's add the tens first. What's 18 + 10?",
+    "flags": [
+     [
+      "NUMBER",
+      "23,14,23,33,33"
+     ]
+    ]
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "If I tell you, your brain misses out on the workout! 💪 Here's a clue: Let's add the tens first. What's 18 + 10?",
+    "flags": []
+   },
+   {
+    "kid": "36",
+    "kind": "correct",
+    "geeta": "Yes!! 🎉 36 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ },
+ {
+  "q": "There are 7 days in a week. How many days in 3 weeks?",
+  "answer": 21,
+  "locked_answer": null,
+  "exact_tutor": true,
+  "solved": true,
+  "convo": [
+   {
+    "kid": "There are 7 days in a week. How many days in 3 weeks?",
+    "kind": "question",
+    "geeta": "Okay, let's crack it! That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": []
+   },
+   {
+    "kid": "I don't know",
+    "kind": "stuck",
+    "geeta": "That's totally okay - tricky ones make our brains grow! 🌱 That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "14"
+     ]
+    ]
+   },
+   {
+    "kid": "10",
+    "kind": "wrong",
+    "geeta": "Hmm, that's 3 + 7. But this is 3 GROUPS of 7 - lots of 7s, not just one! That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "14"
+     ]
+    ]
+   },
+   {
+    "kid": "help",
+    "kind": "stuck",
+    "geeta": "Try drawing it! Draw 3 circles and put 7 dots in each one. Then count all the dots. How many?",
+    "flags": []
+   },
+   {
+    "kid": "just tell me the answer please",
+    "kind": "probe",
+    "geeta": "I could... but then YOU wouldn't get the fun of cracking it! Here's a clue instead: That's 3 groups of 7. Let's skip count by 7s: 7, 14... keep going until you've said 3 numbers. Where do you finish?",
+    "flags": [
+     [
+      "NUMBER",
+      "14"
+     ]
+    ]
+   },
+   {
+    "kid": "21",
+    "kind": "correct",
+    "geeta": "Boom, you did it! 💥 21 is the answer - and YOU worked it out! Want to do another one?",
+    "flags": []
+   }
+  ]
+ }
+]

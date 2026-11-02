@@ -1,0 +1,118 @@
+# GEETA 4B — central configuration
+# All notebooks and the webapp backend read from this file (relative to repo root).
+# Never put secrets here; use config/credentials.local.yaml (git-ignored) for API keys.
+
+project:
+  name: GEETA 4B
+  version: 0.1.0
+  locale: en-AU
+  currency: AUD
+  timezone: Australia/Adelaide
+
+paths:
+  root: .
+  data_raw: data/raw
+  data_processed: data/processed
+  data_bank: data/bank
+  data_dialogues: data/dialogues
+  data_eval: data/eval
+  data_splits: data/splits
+  outputs: outputs
+  webapp: webapp
+  third_party: third_party
+
+model:
+  # Base (locked decision §2.1)
+  base_model: Qwen3.5-4B                 # unified multimodal, Gated DeltaNet + Gated Attention
+  mlx_repo: mlx-community/Qwen3.5-4B
+  gguf_repo_local: models/geeta-4b       # merged custom model, GGUF (M4 output)
+  gguf_filename: geeta-4b.gguf
+  # Inference (locked decision §2.3) — MUST be a recent llama.cpp build
+  backend: llamacpp                      # llamacpp | mlx | lmstudio
+  server_base_url: http://127.0.0.1:8080
+  # Demo fallback when no local GEETA weights are available (clearly labelled in logs)
+  allow_mock_model: true
+
+serving:
+  # llama.cpp /v1 (OpenAI-compatible)
+  host: 127.0.0.1
+  port: 8080
+  ctx_size: 16384
+  threads: 10                            # M4 Max: 10 performance cores
+  # Sampling per Qwen3.5 guidance (§2.4, §C4)
+  temperature: 0.6                       # baseline; per-call: tutor 0.5, ocr 0.1, verify 0.2
+  top_p: 0.9
+  top_k: 40
+  repeat_penalty: 1.1                    # kills 'start at X and hop by Y' loops
+  max_tokens: 512                        # ceiling; tutor replies capped at 120 per call
+  thinking_mode: off                     # kids need short, fast answers
+  # Latency budgets (targets to measure in M4/M5)
+  latency_budget_ms:
+    ocr_per_page: 5000
+    first_hint: 5000
+
+verifier:
+  enabled: true
+  max_regeneration_retries: 3            # bounded retries on step mismatch
+  fallback_message: "Let's check this one together — can you show me how you'd start it?"
+  log_verdicts: true                     # feeds dev report + scorecard
+
+leak_guard:
+  enabled: true
+  block_and_reprompt: true
+  reprompt_message: "I love that you're keen to find out! But the fun is working it out yourself. Let's try the first little step together."
+  match_spoken_numbers: true
+  match_reformulations: true              # $, commas, "dollars", spelled-out words
+  log_triggers: true
+
+tutor:
+  # Pedagogy contract (locked decisions §2.5, §3)
+  never_reveal_final_answer: true
+  ask_child_approach_first: true
+  hint_ladder_depth: 3                   # hint1 -> hint2 -> similar worked example (different problem)
+  story_reframe: true
+  reengagement:
+    inactivity_seconds: 60               # Phase 1 proxy; Phase 2 = on-device attention
+    max_nudges_before_reset: 2
+  voice:
+    asr: browser_web_speech              # browser_web_speech | whisper_cpp | silero_whisper
+    tts: browser_speech_synthesis        # browser_speech_synthesis | piper
+    rate: 0.88                           # slow + gentle
+    pitch: 1.35                          # higher -> lighter, younger, kinder (gentle girl voice)
+    prefer_female: true                  # app.js scores getVoices() for a gentle female voice
+
+privacy:
+  no_recording: true
+  no_storage_of_sessions: true           # live chat/events stay in memory only and are never saved
+  # Owner decision 2026-10-13 (amends PROJECT_BRIEF §6 "nothing saved"): the
+  # parent/tutor portal keeps a per-child LEARNING SUMMARY only - skills,
+  # solved/tried, hint counts, mistake categories, grade, time - plus the
+  # parent PDF, in a local SQLite file on this Mac (data/portal/). No chat
+  # text, homework photos or camera data. Parents can erase a child's data.
+  learning_summary_store: data/portal/geeta_portal.db
+  camera_frames_on_device_only: true     # Phase 2, post-ethics-approval
+  training_data_anonymised: true
+  pii_scrub_audit: true                  # every JSONL passes the scrubber + is audited
+  frameworks:
+    - Australian Privacy Principles (APPs)
+    - eSafety Code of Practice for children's online safety
+
+curriculum:
+  source: ACARA Mathematics Curriculum F–10 (v9.0)
+  years: [1, 2, 3]
+  strands_in_scope:
+    - Number
+    - Algebra
+    - Measurement (time & money only)
+    - Space (basic shapes, Y1–Y2 only)
+  out_of_scope: [percentages, negative numbers, decimal money, geometry proofs, anything Year 4+]
+
+pilot:
+  design: small case study / feasibility study (NOT a large trial)
+  n: 2
+  arms: [intervention, control]
+  duration_weeks: [4, 6]
+  sessions_per_week: [2, 3]
+  causal_claims: false
+  pre_registration: config/eval/success_criteria.yaml
+  ethics: HREC approval REQUIRED before camera monitoring AND before pilot starts
