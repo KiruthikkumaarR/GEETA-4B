@@ -85,3 +85,17 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 ## Research question
 
 Can a small, purpose-built model measurably improve learning outcomes vs. not using one? Evidence plan: a small **n=2 pilot** (1 intervention + 1 control kid, pre/post), explicitly framed as a feasibility case study — no causal claims. Pilot starts only after HREC approval (see `docs/`).
+
+## Contributors
+
+COMP SCI 5800 Industry Research Project, Group C262M-1402.
+
+| Name | Role | Main contributions |
+|---|---|---|
+| Kiruthikkumaar Radhakrishnan | Model and inference lead | LoRA pipeline, vision adaptation, model export (GGUF) and local serving, model evaluation |
+| Jaden O'Neil Machado | Backend and integration lead | API, calculation verifier, leak guard, session logic, integration |
+| Harshanth Chinnusamysundararaju | Frontend and OCR workflow lead | Child-oriented interface, canvas/image input, OCR confirmation flow, dataset support |
+| Zhen Zhao | Project coordinator and documentation | Client contact, meeting minutes, project documents and progress logs |
+| Alaa Alhazmi | Administration, documentation and QA testing | Project documents, end-to-end testing of responses and user scenarios |
+
+Supervisor: Professor Ryan Baker · Academic mentor: Mr Liangwei Zheng
